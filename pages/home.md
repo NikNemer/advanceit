@@ -9,5 +9,5 @@ eleventyNavigation:
   order: 0
 ---
 <div class="center"><img src="/static/img/mainbg.png" width="600px"></div>
-<div id="main-h2">Innovations Development and Implementation for the areas:</div>
-<div id="main-h1">Logistics, Retail and Agrifood</div>
+<div id="main-h1">Your Digital Fortress</div>
+<div id="main-h2">Expert Solutions for the Digital Security of Your Business</div>

@@ -129,8 +129,8 @@ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; font-style: italic;
 
 .section4 { background-color:#F0F0F0;padding-bottom:4em !important; background-image: url("/static/img/lbg.png");background-position: 80% 100%;background-repeat: no-repeat;}
 .section4 .proj-block {display: inline-block;padding: 0 15px;vertical-align:top;width:500px;text-align:left; position:relative;}
-.section4 .proj-block .pb-title-main {font-family: 'Raleway', sans-serif;text-transform: uppercase; font-size: 1.15em; line-heigh:1.5em;}
-.section4 .proj-block .pb-title-sub {font-size: 1.15em; line-heigh:1.5em;}
+.section4 .proj-block .pb-title-main {font-family: 'Raleway', sans-serif;text-transform: uppercase; font-size: 1.15em; line-height:1.5em;}
+.section4 .proj-block .pb-title-sub {font-size: 1.15em; line-height:1.5em;}
 .section4 .proj-block .pb-text {font-size: 1em; line-height:1.5em; padding-bottom:1em;}
 .section4 .proj-block .pb-pic {height:120px; width:100%; position:relative;margin:1.5em 0;}
 .section4 .proj-block.pb1 .pb-pic{ background-image: url("/static/img/logiscs.jpg"); background-position: 50% 50%;}
@@ -144,11 +144,11 @@ background-origin: initial;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover; */
+    -o-background-size: cover; 
     overflow: hidden;}
 .addr .alru {background-image: url("/static/img/logo-is.png");}
 .addr .alen {background-image: url("/static/img/logo-ai.png");}
-.addr .addrname {font-family: 'Raleway', sans-serif;text-transform: uppercase; font-size: 1.15em; line-heigh:1.5em;text-align:left;}
+.addr .addrname {font-family: 'Raleway', sans-serif;text-transform: uppercase; font-size: 1.15em; line-height:1.5em;text-align:left;}
 .pics-block .pic {display: inline-block;width:180px;padding: 0 15px;}
 .inline {display: inline-block;padding: 0 15px;vertical-align:middle;}
 .inline .serv {display: inline-block;margin: 0 20px;font-family: 'Raleway', sans-serif; text-transform: uppercase; font-size: .92em;}
