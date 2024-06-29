@@ -76,10 +76,22 @@ header {
 	height:100px;
 	background: rgba(15, 116, 186, 0.15);
 }
+.flex-container {
+	display: flex;
+	align-items: center;
+  }
+  .flex-text {
+	flex: 1;
+	text-align: left;
+  }
+  .flex-image {
+	flex: 1;
+	text-align: center;
+  }
 #main-h1 {font-family: 'Montserrat', sans-serif;
-	text-transform: uppercase; font-size: 3.5em; letter-spacing: 2.5px; color: #ffffff;line-height: 1em;padding:.5em 0;}
+	text-transform: uppercase; font-size: 3.5em; letter-spacing: 2.5px; color: #c5deff;line-height: 1em;padding:.5em 0;}
 #main-h2 {font-family: 'Montserrat', sans-serif;
-	text-transform: none; font-size: 1.8em; color: #c5deff; line-height: 1em;padding:0 0 0 0;}
+	text-transform: none; font-size: 1.8em; color: #ff00ff; line-height: 1em;padding:0 0 0 0;}
 #section_main {min-height:200px;position: relative; text-align:center;
     /* background-image: url("/static/img/advit-bg.png");
 	background-repeat: no-repeat;
@@ -312,17 +324,7 @@ button {
 	color: var(--secondary);
 	cursor: pointer;
 }
-.flex-container {
-	display: flex;
-	align-items: center;
-  }
-  .flex-text {
-	flex: 1;
-  }
-  .flex-image {
-	flex: 1;
-	text-align: center;
-  }
+
 
 @media screen and (max-width: 915px)
 { 	#mmenu {display:none; background-color:#FFF;}
