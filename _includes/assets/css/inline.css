@@ -74,7 +74,7 @@ header {
     left: 0;
     z-index: 1030;
 	height:100px;
-	background: rgba(255, 255, 255, .15);
+	background: rgba(28, 50, 94, .15);
 }
 #main-h1 {font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase; font-size: 3.5em; letter-spacing: 2.5px; color: #ffffff;line-height: 1em;padding:.5em 0;}
@@ -151,7 +151,7 @@ background-origin: initial;
 .addr .addrname {font-family: 'Raleway', sans-serif;text-transform: uppercase; font-size: 1.15em; line-height:1.5em;text-align:left;}
 .pics-block .pic {display: inline-block;width:180px;padding: 0 15px;}
 .inline {display: inline-block;padding: 0 15px;vertical-align:middle;}
-.inline .serv {display: inline-block;margin: 0 20px; /*font-family: 'Raleway', sans-serif;*/ text-transform: uppercase; font-size: 1em;}
+.inline .serv {display: inline-block;margin: 0 20px; /*font-family: 'Raleway', sans-serif;*/ text-transform: uppercase; font-size: 1em; font-weight: bold;}
 .inline .serv a, .inline .serv a:active, .inline .serv  a:visited {color:#ffffff;text-decoration: none;}
 .inline .serv a:hover {border-bottom: 2px solid #ffffff;text-decoration: none;}
 #logo {padding-top: 10px;}
