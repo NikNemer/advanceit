@@ -15,7 +15,7 @@ eleventyNavigation:
       <div id="main-h2">Expert Solutions for the Digital Security of Your Business</div>
     </div>
     <div class="flex-image">
-      <div class="center"><img src="/static/img/cs22.png" width="800px"></div>
+      <div class="center"><img src="/static/img/cybers.png" width="800px"></div>
     </div>
   </div>
 </div>
