@@ -10,7 +10,7 @@ if (window.netlifyIdentity) {
 var tStart = 0 // Start transition 100px from top
   , tEnd = 300   // End at 300px
   , oStart = .15
-  , oEnd = .45
+  , oEnd = 1
   , oDiff = oEnd - oStart;
 
 $(document).ready(function(){
@@ -23,7 +23,7 @@ $(document).ready(function(){
   }
     $(document).scroll(function() {
         var p = ($(this).scrollTop() - tStart) / (tEnd - tStart); // % of transition
-        p = Math.min(.45, Math.max(oStart, p)); // Clamp to [0, 1]
+        p = Math.min(1, Math.max(oStart, p)); // Clamp to [0, 1]
         var oBg = Math.round(oStart + oDiff) * p
         $(".fixed-top").css('background-color', 'rgb(28, 50, 94,' +oBg + ')');
         if ($(this).scrollTop() < 600) {
