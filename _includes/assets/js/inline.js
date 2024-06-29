@@ -25,7 +25,7 @@ $(document).ready(function(){
         var p = ($(this).scrollTop() - tStart) / (tEnd - tStart); // % of transition
         p = Math.min(1, Math.max(oStart, p)); // Clamp to [0, 1]
         var oBg = Math.round(oStart + oDiff) * p
-        $(".fixed-top").css('background-color', 'rgb(28, 50, 94,' +oBg + ')');
+        $(".fixed-top").css('background-color', 'rgb(6, 45, 73,' +oBg + ')');
         if ($(this).scrollTop() < 600) {
            $('.fixed-top').fadeIn();
         } else {
