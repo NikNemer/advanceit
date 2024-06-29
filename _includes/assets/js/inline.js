@@ -10,7 +10,7 @@ if (window.netlifyIdentity) {
 var tStart = 0 // Start transition 100px from top
   , tEnd = 300   // End at 300px
   , oStart = .15
-  , oEnd = 1
+  , oEnd = .35
   , oDiff = oEnd - oStart;
 
 $(document).ready(function(){
