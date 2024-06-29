@@ -8,6 +8,13 @@ eleventyNavigation:
   key: en
   order: 0
 ---
-<div class="center"><img src="/static/img/secure.png" width="600px"></div>
-<div id="main-h1">Your Digital Fortress</div>
-<div id="main-h2">Expert Solutions for the Digital Security of Your Business</div>
+
+<div class="flex-container">
+  <div class="flex-text">
+    <div id="main-h1">Your Digital Fortress</div>
+    <div id="main-h2">Expert Solutions for the Digital Security of Your Business</div>
+  </div>
+  <div class="flex-image">
+    <div class="center"><img src="/static/img/secure.png" width="600px"></div>
+  </div>
+</div>

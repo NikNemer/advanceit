@@ -309,6 +309,18 @@ button {
 	color: var(--secondary);
 	cursor: pointer;
 }
+.flex-container {
+	display: flex;
+	align-items: center;
+  }
+  .flex-text {
+	flex: 1;
+  }
+  .flex-image {
+	flex: 1;
+	text-align: center;
+  }
+
 @media screen and (max-width: 915px)
 { 	#mmenu {display:none; background-color:#FFF;}
 	#mmenulogo {display:inline-block;}
