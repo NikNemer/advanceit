@@ -1,7 +1,7 @@
 ---
 title: en - 0 - Intro
 language: en
-order: 0
+order: 1
 ---
 <div class="content-wrapper">
 <div class="core-title">With a focus on maintaining the highest level of confidentiality, we protect your business' critical information while enhancing your digital security.</div>
