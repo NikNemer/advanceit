@@ -138,25 +138,25 @@ header {
 .text-block h3 {font-family: 'Raleway', sans-serif; text-transform: uppercase; font-size: 1.5em; letter-spacing: 2.5px;margin: 1.5em 0 .5em 0 !important;}
 .section5 .text-block h3 {text-decoration: none; color: #BBB;}
 .center {align-items: center; text-align:center;}
-.section2 {padding-bottom:3em;}
-.section0 {padding:3em 1.5em;}
-.section0 .content-wrapper {border-left: 3px solid #c8ff59;max-width:1200px;margin: 0 auto;padding: .5em 0 0.5em 2em;}
-.section0 .content-wrapper .core-title { line-height:1.5em; /* font-family: 'Raleway', sans-serif; */ font-weight:bold; text-transform: none; font-size: 1.4em;color:#333;padding:0 0 15px 0;}
-.section0 .content-wrapper .core-text {margin: 0 auto; font-size: 1.15em; line-height:1.5em;}
+.section0 {padding-bottom:3em;}
+.section1 {padding:3em 1.5em;}
+.section1 .content-wrapper {border-left: 3px solid #c8ff59;max-width:1200px;margin: 0 auto;padding: .5em 0 0.5em 2em;}
+.section1 .content-wrapper .core-title { line-height:1.5em; /* font-family: 'Raleway', sans-serif; */ font-weight:bold; text-transform: none; font-size: 1.4em;color:#333;padding:0 0 15px 0;}
+.section1 .content-wrapper .core-text {margin: 0 auto; font-size: 1.15em; line-height:1.5em;}
 .section h2, .section.content-block { padding: 1.5em; margin:0; }
-.section2 {padding:0 1.5em 3em 1.5em;}
-.section2 .text-block {margin: 0 auto;padding: .5em 0 0.5em 2em; margin: 0 auto; font-size: 1.15em; line-height:1.5em;}
-.section2 .content-wrapper {max-width:1200px;margin: 0 auto;padding: .5em 0 0.5em 0.5em;}
-.section2 .flex-container {
+.section0 {padding:0 1.5em 3em 1.5em;}
+.section0 .text-block {margin: 0 auto;padding: .5em 0 0.5em 2em; margin: 0 auto; font-size: 1.15em; line-height:1.5em;}
+.section0 .content-wrapper {max-width:1200px;margin: 0 auto;padding: .5em 0 0.5em 0.5em;}
+.section0 .flex-container {
 	display: flex;
 	align-items: flex-start;
   }
-  .section2 .flex-image {
+  .section0 .flex-image {
 	width: 120px;
 	margin-right: 1em;
 	flex: 0 0 120px;
   }
-  .section2 .text-block {
+  .section0 .text-block {
 	flex: 1;
   }
 .section5 { text-align: center; }
@@ -201,9 +201,9 @@ background-origin: initial;
 .inline .serv a:hover {border-bottom: 2px solid #ffffff;text-decoration: none;}
 #logo {padding-top: 10px;}
 
-.section1 .content-block { background-image: url("/static/img/innoo2.png"); padding-top: 3em;color:#FFFFFF;}
-.section1 .content-block .services-list {vertical-align:top;}
-.section1 .content-block .serv { /*padding-left:80px;*/ position: relative; display:inline-block; padding:1em; width:300px; text-align:left;vertical-align: top;}
+.section2 .content-block { background-image: url("/static/img/innoo2.png"); padding-top: 3em;color:#FFFFFF;}
+.section2 .content-block .services-list {vertical-align:top;}
+.section2 .content-block .serv { /*padding-left:80px;*/ position: relative; display:inline-block; padding:1em; width:300px; text-align:left;vertical-align: top;}
 .serv .serv-icon { /* position: absolute; left:0px; top:0px; */ padding-bottom:1.5em;}
 .serv .serv-title {font-size: 1.3em;font-weight:bold; line-height:1.5em; padding-bottom:1em;}
 .serv .serv-text {font-size: 1em; line-height:1.5em; padding-bottom:2em;}
@@ -367,15 +367,15 @@ button {
 @media screen and (max-width: 600px)
 { 
 	.section4 .proj-block {display: block;width:auto;max-width:500px;margin:0 auto !important;}
-	.section2 .flex-container {
+	.section0 .flex-container {
 		flex-direction: column;
 		align-items: center;
 	  }
-	  .section2 .flex-image {
+	  .section0 .flex-image {
 		margin-right: 0;
 		margin-bottom: 20px;
 	  }
-	  .section2 .text-block {padding: .5em 0 0.5em 0;}
+	  .section0 .text-block {padding: .5em 0 0.5em 0;}
 }
 @media screen and (min-width:768px) {
 	:root {
