@@ -6,7 +6,6 @@ order: 0
 <a id="about"></a>
 
 <div class="content-wrapper">
-<div class="title-block center"><h2>About Us</h2></div>
 <div class="flex-container">
   <div class="flex-image">
     <img src="/static/img/sp.png" style="width: 120px; max-width: 120px;">
