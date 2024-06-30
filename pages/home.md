@@ -10,7 +10,7 @@ eleventyNavigation:
 ---
 <div class="content-wrapper">
   <div class="flex-container">
-    <div class="flex-text">
+    <div class="flex-text mainh">
       <div id="main-h1">Your Digital Fortress</div>
       <div id="main-h2">Expert Solutions for the Digital Security of Your Business</div>
     </div>
