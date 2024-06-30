@@ -26,7 +26,7 @@ $(document).ready(function(){
         p = Math.min(1, Math.max(oStart, p)); // Clamp to [0, 1]
         var oBg = Math.round(oStart + oDiff) * p
         $(".fixed-top").css('background-color', 'rgb(15, 99, 174,' +oBg + ')');
-        if ($(this).scrollTop() < 600) {
+        if ($(this).scrollTop() < 500) {
            $('.fixed-top').fadeIn();
         } else {
            $('.fixed-top').fadeOut();
