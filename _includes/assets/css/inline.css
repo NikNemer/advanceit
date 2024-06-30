@@ -146,7 +146,7 @@ header {
 .section h2, .section.content-block { padding: 1.5em; margin:0; }
 .section2 {padding:0 1.5em 3em 1.5em;}
 .section2 .text-block {margin: 0 auto;padding: .5em 0 0.5em 2em; margin: 0 auto; font-size: 1.15em; line-height:1.5em;}
-.section2 .content-wrapper {max-width:1200px;margin: 0 auto;padding: .5em 0 0.5em 0;}
+.section2 .content-wrapper {max-width:1200px;margin: 0 auto;padding: .5em 0 0.5em 0.5em;}
 .section2 .flex-container {
 	display: flex;
 	align-items: flex-start;
