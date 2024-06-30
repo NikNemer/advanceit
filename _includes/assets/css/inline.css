@@ -152,7 +152,8 @@ header {
 	align-items: flex-start;
   }
   .section2 .flex-image {
-	margin-right: 20px;
+	width: 120px;
+	margin-right: 2em;
   }
   .section2 .text-block {
 	flex: 1;
