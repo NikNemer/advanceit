@@ -147,6 +147,16 @@ header {
 .section h2, .section.content-block { padding: 1.5em; margin:0; }
 .section2 {padding:0 1.5em 3em 1.5em;}
 .section2 .text-block {border-left: 3px solid #e8194d;max-width:1200px;margin: 0 auto;padding: .5em 0 0.5em 2em; margin: 0 auto; font-size: 1.15em; line-height:1.5em;}
+.section2 .flex-container {
+	display: flex;
+	align-items: flex-start;
+  }
+  .section2 .flex-image {
+	margin-right: 20px;
+  }
+  .section2 .text-block {
+	flex: 1;
+  }
 .section5 { text-align: center; }
 .section5 .content-block { background-color:#FFF;padding-bottom:4em !important;}
 
