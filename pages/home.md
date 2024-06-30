@@ -13,6 +13,7 @@ eleventyNavigation:
     <div class="flex-text mainh">
       <div id="main-h1">Your Digital Fortress</div>
       <div id="main-h2">Expert Solutions for the Digital Security of Your Business</div>
+      <div><div class="request">Request a Quote</div></div>
     </div>
     <div class="flex-image">
       <div class="center"><img src="/static/img/cybers.png" width="800px"></div>

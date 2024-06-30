@@ -90,7 +90,7 @@ header {
   }
 .mainh {padding-left: 2em;}
 #main-h1 {font-family: 'Montserrat', sans-serif;
-	text-transform: uppercase; font-size: 3.2em; letter-spacing: 2.5px; color: #c8ff59;line-height: 1em;padding:.5em 0;}
+	text-transform: uppercase; font-size: 3.2em; letter-spacing: 2.5px; color: #c8ff93;line-height: 1em;padding:.5em 0;}
 #main-h2 {font-family: 'Montserrat', sans-serif;
 	text-transform: none; font-size: 1.8em; color: #1ccdda; line-height: 1em;padding:0 0 0 0;}
 #section_main {min-height:200px;position: relative; text-align:center;
@@ -105,6 +105,20 @@ header {
 	background-color: #111c7d;
     width: 100%;
     overflow: hidden;
+	}
+.request {
+		color: #fff;
+		padding: 10px 16px;
+		background: #e5453d;
+		border-radius: 8px;
+		border: none;
+		cursor: pointer;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 20px;
+		letter-spacing: -.006em;
+		transition: all .2s ease-in-out;
 	}
 
 .page-wrapper {position: relative;}
