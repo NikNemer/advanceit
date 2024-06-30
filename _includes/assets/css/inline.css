@@ -90,7 +90,7 @@ header {
   }
 .mainh {padding-left: 2em;}
 #main-h1 {font-family: 'Montserrat', sans-serif;
-	text-transform: uppercase; font-size: 3.2em; letter-spacing: 2.5px; color: #ffffff;line-height: 1em;padding:.5em 0;}
+	text-transform: uppercase; font-size: 3.2em; letter-spacing: 2.5px; color: #c8ff59;line-height: 1em;padding:.5em 0;}
 #main-h2 {font-family: 'Montserrat', sans-serif;
 	text-transform: none; font-size: 1.8em; color: #1ccdda; line-height: 1em;padding:0 0 0 0;}
 #section_main {min-height:200px;position: relative; text-align:center;
@@ -124,7 +124,7 @@ header {
 .center {align-items: center; text-align:center;}
 .section2 {padding-bottom:3em;}
 .section0 {padding:3em 1.5em;}
-.section0 .content-wrapper {border-left: 3px solid #e8194d;max-width:1200px;margin: 0 auto;padding: .5em 0 0.5em 2em;}
+.section0 .content-wrapper {border-left: 3px solid #c8ff59;max-width:1200px;margin: 0 auto;padding: .5em 0 0.5em 2em;}
 .section0 .content-wrapper .core-title { line-height:1.5em; /* font-family: 'Raleway', sans-serif; */ font-weight:bold; text-transform: none; font-size: 1.4em;color:#333;padding:0 0 15px 0;}
 .section0 .content-wrapper .core-text {margin: 0 auto; font-size: 1.15em; line-height:1.5em;}
 .section h2, .section.content-block { padding: 1.5em; margin:0; }
