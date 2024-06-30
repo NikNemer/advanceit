@@ -4,6 +4,7 @@ language: en
 order: 0
 ---
 <div class="content-wrapper">
-<div class="core-title">Together with our software developers and design professionals’ team we will solve your company's technological problems and offer the best solutions.</div>
-<div class="core-text">We are a team of highly qualified professionals with extensive and relevant experience in developing software solutions for the logistics, retail, and agrifood industries. For more than 5 years we have been working as a software innovation partner for leading Ukrainian companies and large global enterprises.</div>
+<div class="core-title">With a focus on maintaining the highest level of confidentiality, we protect your business' critical information while enhancing your digital security.</div>
+<div class="core-text">We use advanced verification and AI technology to identify potential vulnerabilities in your Software Systems, Network Infrastructure, and build systems to protect and control the security of your Business IT Systems. We implement and improve your company's Security Policies and Controls, ensuring a robust and resilient digital environment. Our expertise and commitment to confidentiality safeguard your business's critical information while enhancing its overall security posture.</div>
+<div class="core-text">Trust AdvanceIT to be your partner in building a secure and resilient digital fortress.</div>
 </div>
