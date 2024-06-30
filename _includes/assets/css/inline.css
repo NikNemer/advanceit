@@ -119,6 +119,9 @@ header {
 		line-height: 20px;
 		letter-spacing: -.006em;
 		transition: all .2s ease-in-out;
+		width: 200px;
+		text-align: center;
+		margin-top: 2em !important;
 	}
 
 .page-wrapper {position: relative;}
