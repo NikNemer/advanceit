@@ -29,13 +29,13 @@ order: 2
 </div>
 
 <div class="serv">
-<div class="serv-icon"><i class="fa fa-address-card-o fa-3x"></i></div>
+<div class="serv-icon"><i class="bi bi-person-bounding-box fa-3x"></i></div>
 <div class="serv-title">Access Management</div>
 <div class="serv-text">We create a clean, simple process with detailed descriptions, consult with our team of professionals during the development process</div>
 </div>
 
 <div class="serv">
-<div class="serv-icon"><i class="fa fa-object-group fa-3x"></i></div>
+<div class="serv-icon"><i class="bi bi-clipboard2-check fa-3x"></i></div>
 <div class="serv-title">Risk Management</div>
 <div class="serv-text">Based on our extensive background knowledge of UI and UX, we are able to solve all obstacles for your business</div>
 </div>
