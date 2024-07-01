@@ -11,7 +11,7 @@ order: 2
 <div class="services-list center">
 
 <div class="serv">
-<div class="serv-icon"><i class="fa fa-line-chart fa-3x"></i></div>
+<div class="serv-icon"><i class="fa fa-keyboard-o fa-3x"></i></div>
 <div class="serv-title">Software Security</div>
 <div class="serv-text">We create a clean, simple process with detailed descriptions, consult with our team of professionals during the development process</div>
 </div>
@@ -29,7 +29,7 @@ order: 2
 </div>
 
 <div class="serv">
-<div class="serv-icon"><i class="fa fa-line-chart fa-3x"></i></div>
+<div class="serv-icon"><i class="fa fa-id-card-o fa-3x"></i></div>
 <div class="serv-title">Access Management</div>
 <div class="serv-text">We create a clean, simple process with detailed descriptions, consult with our team of professionals during the development process</div>
 </div>
