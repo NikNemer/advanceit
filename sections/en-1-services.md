@@ -17,7 +17,7 @@ order: 2
 </div>
 
 <div class="serv">
-<div class="serv-icon"><i class="fa fa-object-group fa-3x"></i></div>
+<div class="serv-icon"><i class="bi bi-hdd-network fa-3x"></i></div>
 <div class="serv-title">Network Security</div>
 <div class="serv-text">Based on our extensive background knowledge of UI and UX, we are able to solve all obstacles for your business</div>
 </div>
@@ -29,7 +29,7 @@ order: 2
 </div>
 
 <div class="serv">
-<div class="serv-icon"><i class="fa fa-id-card-o fa-3x"></i></div>
+<div class="serv-icon"><i class="fa fa-address-card-o fa-3x"></i></div>
 <div class="serv-title">Access Management</div>
 <div class="serv-text">We create a clean, simple process with detailed descriptions, consult with our team of professionals during the development process</div>
 </div>
