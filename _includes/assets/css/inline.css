@@ -2,6 +2,8 @@
 	--primary: blue;
 	--secondary: white;
 	--background: #FFF0EB;
+	--accent-color: #ce1212;
+	--contrast-color: #ffffff;
 }
 
 *, *:before, *:after {
@@ -206,7 +208,7 @@ background-origin: initial;
 .section2 .content-block .serv {position:relative;display:inline-block;font-size: 1.15em; line-height:1.5em;padding:2em;
 	/*box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;*/max-width:365px;margin: 15px;vertical-align:top; text-align:left; background-color: #fff;}
 .serv .serv-icon { /* position: absolute; left:0px; top:0px; */ padding-bottom:1.5em;}
-.serv .serv-icon {
+.serv .serv-icon i {
 	color: var(--accent-color);
 	font-size: 32px;
 	margin-bottom: 30px;
@@ -219,7 +221,7 @@ background-origin: initial;
 	height: 72px;
 	transition: 0.3s;
   }
-  .why-us .icon-box:hover i {
+.serv .serv-icon:hover i {
 	color: var(--contrast-color);
 	background: var(--accent-color);
   }
