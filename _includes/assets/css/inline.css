@@ -229,7 +229,7 @@ background-origin: initial;
 	color: var(--contrast-color);
 	background: var(--accent-color);
   }
-.serv .serv-title {font-size: 1.3em;font-weight:normal; line-height:1.5em; padding-bottom:1em;}
+.serv .serv-title {font-size: 1.3em;font-weight:normal; line-height:1.5em; padding-bottom:1em;text-align: center;}
 .serv .serv-text {font-size: 1em; line-height:1.5em; padding-bottom:2em;color:#333;}
 
 #sendform {    max-width: 600px;

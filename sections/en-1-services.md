@@ -18,7 +18,25 @@ order: 2
 <div class="serv">
 <div class="serv-icon"><i class="fa fa-object-group fa-3x"></i></div>
 <div class="serv-title">Asset Security</div>
-<div class="serv-text">Based on our extensive background knowledge of UI and UX, we are able to solve all obstacles for your business. We constantly create practical </div>
+<div class="serv-text">Based on our extensive background knowledge of UI and UX, we are able to solve all obstacles for your business</div>
+</div>
+
+<div class="serv">
+<div class="serv-icon"><i class="fa fa-television fa-3x"></i></div>
+<div class="serv-title">Risk Management</div>
+<div class="serv-text">Our team can work on e-commerce projects by managing the back-end, improving the visual design, expanding the marketplace</div>
+</div>
+
+<div class="serv">
+<div class="serv-icon"><i class="fa fa-line-chart fa-3x"></i></div>
+<div class="serv-title">Software Security</div>
+<div class="serv-text">We create a clean, simple process with detailed descriptions, consult with our team of professionals during the development process</div>
+</div>
+
+<div class="serv">
+<div class="serv-icon"><i class="fa fa-object-group fa-3x"></i></div>
+<div class="serv-title">Asset Security</div>
+<div class="serv-text">Based on our extensive background knowledge of UI and UX, we are able to solve all obstacles for your business</div>
 </div>
 
 <div class="serv">
