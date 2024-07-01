@@ -201,9 +201,11 @@ background-origin: initial;
 .inline .serv a:hover {border-bottom: 2px solid #ffffff;text-decoration: none;}
 #logo {padding-top: 10px;}
 
-.section2 .content-block { background-image: url("/static/img/innoo2.png"); padding-top: 3em;color:#FFFFFF;}
+.section2 .content-block { background-color:#F0F0F0; padding-top: 3em;}
 .section2 .content-block .services-list {vertical-align:top;}
-.section2 .content-block .serv { /*padding-left:80px;*/ position: relative; display:inline-block; padding:1em; width:300px; text-align:left;vertical-align: top;}
+.section2 .content-block .serv {position:relative;display:inline-block;font-size: 1.15em; line-height:1.5em;padding:30px 30px 30px 70px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
+/*{ position: relative; display:inline-block; padding:1em; width:300px; text-align:left;vertical-align: top;}*/
 .serv .serv-icon { /* position: absolute; left:0px; top:0px; */ padding-bottom:1.5em;}
 .serv .serv-title {font-size: 1.3em;font-weight:bold; line-height:1.5em; padding-bottom:1em;}
 .serv .serv-text {font-size: 1em; line-height:1.5em; padding-bottom:2em;}
