@@ -35,13 +35,13 @@ order: 2
 </div>
 
 <div class="serv">
-<div class="serv-icon"><i class="bi bi-clipboard2-check fa-3x"></i></div>
+<div class="serv-icon"><i class="bi bi-clipboard-check fa-3x"></i></div>
 <div class="serv-title">Risk Management</div>
 <div class="serv-text">Based on our extensive background knowledge of UI and UX, we are able to solve all obstacles for your business</div>
 </div>
 
 <div class="serv">
-<div class="serv-icon"><i class="fa fa-television fa-3x"></i></div>
+<div class="serv-icon"><i class="bi bi-fingerprint fa-3x"></i></div>
 <div class="serv-title">Security Assessment</div>
 <div class="serv-text">Our team can work on e-commerce projects by managing the back-end, improving the visual design, expanding the marketplace</div>
 </div>
