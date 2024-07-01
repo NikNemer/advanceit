@@ -203,8 +203,8 @@ background-origin: initial;
 .inline .serv a:hover {border-bottom: 2px solid #ffffff;text-decoration: none;}
 #logo {padding-top: 10px;}
 
-.section2 .content-wrapper {margin: 0 auto;
-    padding: .5em .5em .5em .5em;
+.section2 .content-wrapper {margin: 1em auto;
+    padding: .5em .0 .5em 0;
     background-color: #f0f0f0;}
 .section2 .content-block { max-width: 1200px;
     margin: 0 auto;}
