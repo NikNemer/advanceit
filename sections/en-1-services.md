@@ -23,7 +23,7 @@ order: 2
 </div>
 
 <div class="serv">
-<div class="serv-icon"><i class="fa fa-television fa-3x"></i></div>
+<div class="serv-icon"><i class="bi bi-shield-lock fa-3x"></i></div>
 <div class="serv-title">Asset Security</div>
 <div class="serv-text">Our team can work on e-commerce projects by managing the back-end, improving the visual design, expanding the marketplace</div>
 </div>
