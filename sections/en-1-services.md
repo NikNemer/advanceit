@@ -42,7 +42,7 @@ order: 2
 
 <div class="serv">
 <div class="serv-icon"><i class="fa fa-television fa-3x"></i></div>
-<div class="serv-title">Security Assesment</div>
+<div class="serv-title">Security Assessment</div>
 <div class="serv-text">Our team can work on e-commerce projects by managing the back-end, improving the visual design, expanding the marketplace</div>
 </div>
 
