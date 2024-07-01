@@ -13,37 +13,37 @@ order: 2
 <div class="serv">
 <div class="serv-icon"><i class="bi bi-code fa-3x"></i></div>
 <div class="serv-title">Software Security</div>
-<div class="serv-text">Source code review for security vulnerabilities. Application penetration testing. Secure software development lifecycle (SDLC) assessment.</div>
+<div class="serv-text">Enhancing the security posture of software applications through advanced vulnerability detection and remediation techniques</div>
 </div>
 
 <div class="serv">
 <div class="serv-icon"><i class="bi bi-hdd-network fa-3x"></i></div>
 <div class="serv-title">Network Security</div>
-<div class="serv-text">Vulnerability scanning and assessment. Penetration testing (external and internal). Firewall and intrusion detection/prevention system (IDS/IPS) review.</div>
+<div class="serv-text">Implementing robust measures to protect network infrastructure from cyber threats and unauthorized access</div>
 </div>
 
 <div class="serv">
 <div class="serv-icon"><i class="bi bi-shield-lock fa-3x"></i></div>
 <div class="serv-title">Asset Security</div>
-<div class="serv-text">Our team can work on e-commerce projects by managing the back-end, improving the visual design, expanding the marketplace</div>
+<div class="serv-text">Safeguarding organizational assets through comprehensive data classification, handling, and protection protocols</div>
 </div>
 
 <div class="serv">
 <div class="serv-icon"><i class="bi bi-person-bounding-box fa-3x"></i></div>
 <div class="serv-title">Access Management</div>
-<div class="serv-text">We create a clean, simple process with detailed descriptions, consult with our team of professionals during the development process</div>
+<div class="serv-text">Ensuring controlled and secure access to critical systems and data via stringent identity verification processes</div>
 </div>
 
 <div class="serv">
 <div class="serv-icon"><i class="bi bi-clipboard-check fa-3x"></i></div>
 <div class="serv-title">Risk Management</div>
-<div class="serv-text">Based on our extensive background knowledge of UI and UX, we are able to solve all obstacles for your business</div>
+<div class="serv-text">Conducting thorough risk assessments to identify, analyze, and mitigate potential security risks to the organization</div>
 </div>
 
 <div class="serv">
 <div class="serv-icon"><i class="bi bi-fingerprint fa-3x"></i></div>
 <div class="serv-title">Security Assessment</div>
-<div class="serv-text">Our team can work on e-commerce projects by managing the back-end, improving the visual design, expanding the marketplace</div>
+<div class="serv-text">Performing detailed evaluations of security measures to identify vulnerabilities and recommend strategic improvements</div>
 </div>
 
 
