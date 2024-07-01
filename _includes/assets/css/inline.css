@@ -229,7 +229,7 @@ background-origin: initial;
 	height: 72px;
 	transition: 0.3s;
   }
-.serv .serv-icon:hover i {
+.serv:hover .serv-icon i {
 	color: var(--contrast-color);
 	background: var(--accent-color);
   }
