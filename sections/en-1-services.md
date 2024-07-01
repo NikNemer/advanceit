@@ -6,6 +6,7 @@ order: 2
 <a id="services"></a>
 <div class="title-block center"><h2>Our main services</h2></div>
 
+<div class="content-wrapper">
 <div class="content-block">
 <div class="services-list center">
 
@@ -46,5 +47,6 @@ order: 2
 </div>
 
 
+</div>
 </div>
 </div>
