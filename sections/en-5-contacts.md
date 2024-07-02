@@ -10,7 +10,7 @@ order: 6
 
 <div class="addr">
 <div class="addrlogo inline alen"></div>
-<div class="addrname inline">"Advance IT"<br /> FZ LLC</div>
+<div class="addrname inline">"Advance IT" FZ LLC</div>
 </div>
 
 <p><b>UAE, Fujairah</b><br />
