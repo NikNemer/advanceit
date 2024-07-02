@@ -8,13 +8,19 @@ order: 5
 <div class="content-block">
 <div class="intro-block">We leverage advanced Technologies and Artificial Intelligence to create innovative, secure, and efficient solutions.<br /> Our expertise ensures that we meet the unique and evolving needs of our clients, enhancing their Digital Security and Operational Resilience.</div>
 <div class="line-block top15em bottom15em"></div>
+
 <div class="text-block">
+
 <div class="pics-block">
 <div class="pic"><img src="/static/img/python-logo.png" width=180 height=120></div>
 <div class="pic"><img src="/static/img/sqllogo.png" width=180 height=120></div>
 <div class="pic"><img src="/static/img/deblogo.png" width=180 height=120></div>
 <div class="pic"><img src="/static/img/javalogo.png" width=180 height=120></div>
 <div class="pic"><img src="/static/img/jslogo.png" width=180 height=120></div>
+</div>
+<div class="pics-block">
+<div class="pic"><img src="/static/img/copilotlogo.png" width=180 height=120></div>
+<div class="pic"><img src="/static/img/chatgptlogo.png" width=180 height=120></div>
 </div>
 <h3>Controls, Frameworks, Compliance</h3>
 <div class="pics-block">
@@ -26,4 +32,5 @@ order: 5
 </div>
 
 </div>
+
 </div>
