@@ -23,8 +23,8 @@ order: 5
 <div class="pic"><img src="/static/img/copilotlogo.png" width=180 height=120></div>
 </div>
 <div class="pics-block">
-<div class="pic"><img src="/static/img/nistcsf-logo.png" width=180 height=120></div>
 <div class="pic"><img src="/static/img/nistrmf-logo.png" width=180 height=120></div>
+<div class="pic"><img src="/static/img/nistcsf-logo.png" width=180 height=120></div>
 <div class="pic"><img src="/static/img/gdpr-logo.png" width=180 height=120></div>
 </div>
 
