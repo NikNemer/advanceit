@@ -388,7 +388,12 @@ button {
 	cursor: pointer;
 }
 
-
+@media screen and (max-width: 1215px)
+{ 	
+	.page-wrapper {
+		background-position: 50%;
+	}
+}
 @media screen and (max-width: 915px)
 { 	#mmenu {display:none; background-color:#366dc7;}
 	#mmenulogo {display:inline-block;}
@@ -397,7 +402,7 @@ button {
 	#main-h2 {font-size: 1.6em;}
 	.title-block h2 {font-size: 2em;}
 	.page-wrapper {
-		background-position: 50%;
+		background-position: 70%;
 	}
 }
 @media screen and (max-width: 600px)
