@@ -397,7 +397,7 @@ button {
 	#main-h2 {font-size: 1.6em;}
 	.title-block h2 {font-size: 2em;}
 	.page-wrapper {
-		background-position: 0%;
+		background-position: 50%;
 	}
 }
 @media screen and (max-width: 600px)
