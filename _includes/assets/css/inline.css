@@ -96,14 +96,14 @@ header {
 #main-h2 {font-family: 'Montserrat', sans-serif;
 	text-transform: none; font-size: 1.8em; color: #1ccdda; line-height: 1em;padding:0 0 0 0;}
 #section_main {min-height:200px;position: relative; text-align:center;
-    /* background-image: url("/static/img/advit-bg.png");
+    background-image: url("/static/img/csec.jpg");
 	background-repeat: no-repeat;
     background-origin: initial;
-    background-position: 50%;
+    background-position: 100%;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover; */
+    -o-background-size: cover; 
 	background-color: #111c7d;
     width: 100%;
     overflow: hidden;
