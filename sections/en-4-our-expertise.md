@@ -13,17 +13,10 @@ order: 5
 <div class="pic"><img src="/static/img/python-logo.png" width=180 height=120></div>
 <div class="pic"><img src="/static/img/sqllogo.png" width=180 height=120></div>
 <div class="pic"><img src="/static/img/javalogo.png" width=180 height=120></div>
-<div class="pic"><img src="/static/img/restapilogo.png" width=180 height=120></div>
-<div class="pic"><img src="/static/img/nodejslogo.png" width=180 height=120></div>
+<div class="pic"><img src="/static/img/jslogo.png" width=180 height=120></div>
+<div class="pic"><img src="/static/img/deblogo.png" width=180 height=120></div>
 </div>
-<h3>PM & BA</h3>
-<div class="pics-block">
-<div class="pic"><img src="/static/img/logo-visio.png" width=180 height=120></div>
-<div class="pic"><img src="/static/img/teamgantt-logo.png" width=180 height=120></div>
-<div class="pic"><img src="/static/img/mirologo.png" width=180 height=120></div>
-<div class="pic"><img src="/static/img/balsamiq-logo.png" width=180 height=120></div>
-</div>
-<h3>DevOps</h3>
+<h3>Controls, Frameworks, Compliance</h3>
 <div class="pics-block">
 <div class="pic"><img src="/static/img/kubernetes-logo.png" width=180 height=120></div>
 <div class="pic"><img src="/static/img/jetbrains-teamcity-logo.png" width=180 height=120></div>
