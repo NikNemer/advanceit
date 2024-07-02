@@ -396,6 +396,9 @@ button {
 	#main-h1 {font-size: 3em;}
 	#main-h2 {font-size: 1.6em;}
 	.title-block h2 {font-size: 2em;}
+	.page-wrapper {
+		background-position: 0%;
+	}
 }
 @media screen and (max-width: 600px)
 { 
@@ -409,6 +412,9 @@ button {
 		margin-bottom: 20px;
 	  }
 	  .section0 .text-block {padding: .5em 0 0.5em 0;}
+	  .page-wrapper {
+		background-position: 100%;
+	}
 }
 @media screen and (min-width:768px) {
 	:root {

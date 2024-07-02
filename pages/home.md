@@ -16,7 +16,7 @@ eleventyNavigation:
       <div><div class="request">Request a Quote</div></div>
     </div>
     <div class="flex-image">
-      <div class="center"><img src="/static/img/cybers.png" width="800px"></div>
+      <div class="center"></div>
     </div>
   </div>
 </div>
