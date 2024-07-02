@@ -12,7 +12,7 @@ order: 6
 <div class="addrlogo inline alen"></div>
 <div class="addrname inline">"Advance IT" FZ LLC</div>
 </div>
-<div class="addr">
+<div class="addr top15em">
 <p><b>UAE, Fujairah</b><br />
 Creative Tower, P.O. Box 4422</p>
 <p class=""><b>+971 56 139 0955</b><p>
