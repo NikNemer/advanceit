@@ -10,23 +10,26 @@ order: 5
 <div class="line-block top25em bottom3em"></div>
 
 <div class="text-block">
-
+<h3>SIEM & NPA Tools</h3>
 <div class="pics-block">
 <div class="pic"><img src="/static/img/chronicle-logo.png" width=180 height=120></div>
 <div class="pic"><img src="/static/img/splunk-logo.png" width=180 height=120></div>
 <div class="pic"><img src="/static/img/tcpdunp-logo.png" width=180 height=120></div>
 <div class="pic"><img src="/static/img/wireshark-logo.png" width=180 height=120></div>
 </div>
+<h3>Programming & OS</h3>
 <div class="pics-block">
 <div class="pic"><img src="/static/img/python-logo.png" width=180 height=120></div>
 <div class="pic"><img src="/static/img/sqllogo.png" width=180 height=120></div>
 <div class="pic"><img src="/static/img/deblogo.png" width=180 height=120></div>
 <div class="pic"><img src="/static/img/jslogo.png" width=180 height=120></div>
 </div>
+<h3>Artificial Intelligence</h3>
 <div class="pics-block">
 <div class="pic"><img src="/static/img/chatgptlogo.png" width=180 height=120></div>
 <div class="pic"><img src="/static/img/copilotlogo.png" width=180 height=120></div>
 </div>
+<h3>Frameworks & Regulations</h3>
 <div class="pics-block">
 <div class="pic"><img src="/static/img/nistrmf-logo.png" width=180 height=120></div>
 <div class="pic"><img src="/static/img/nistcsf-logo.png" width=180 height=120></div>
