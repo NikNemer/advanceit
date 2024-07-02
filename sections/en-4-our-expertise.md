@@ -12,9 +12,9 @@ order: 5
 <div class="pics-block">
 <div class="pic"><img src="/static/img/python-logo.png" width=180 height=120></div>
 <div class="pic"><img src="/static/img/sqllogo.png" width=180 height=120></div>
+<div class="pic"><img src="/static/img/deblogo.png" width=180 height=120></div>
 <div class="pic"><img src="/static/img/javalogo.png" width=180 height=120></div>
 <div class="pic"><img src="/static/img/jslogo.png" width=180 height=120></div>
-<div class="pic"><img src="/static/img/deblogo.png" width=180 height=120></div>
 </div>
 <h3>Controls, Frameworks, Compliance</h3>
 <div class="pics-block">
