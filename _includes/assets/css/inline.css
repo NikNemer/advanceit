@@ -65,8 +65,8 @@ header {
     z-index: 500;
 }
 
-#mmenulogo { display:none;color:#666;text-decoration: none;padding: .25em .5em; border-radius: .25em;margin-left:20px;}
-#mmenulogo:hover { background-color: #e6e6e6; cursor: pointer;}
+#mmenulogo { display:none;color:#1ccdda;background-color: #111f95;text-decoration: none;padding: .25em .5em; border-radius: .25em;margin-left:20px;}
+#mmenulogo:hover {background-color: #111f95; background-color: #1ccdda; cursor: pointer;}
 
 .hides {display:none !important;}
 .fixed-top {
