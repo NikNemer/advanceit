@@ -3,8 +3,8 @@ title: en - 5 - Our Expertise
 language: en
 order: 5
 ---
-<a id="experts"></a>
-<div class="title-block center"><h2>Our Expertise</h2></div>
+<a id="tech"></a>
+<div class="title-block center"><h2>Our Technologies</h2></div>
 <div class="content-block">
 <div class="intro-block">Our programmers are constantly improving and using advanced technologies and platforms. <br /> We work with leading data protection protocols</div>
 <div class="line-block top15em"></div>
