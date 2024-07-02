@@ -388,10 +388,16 @@ button {
 	cursor: pointer;
 }
 
-@media screen and (max-width: 1215px)
+@media screen and (max-width: 1315px)
 { 	
 	.page-wrapper {
-		background-position: 50%;
+		background-position: 0%;
+	}
+}
+@media screen and (max-width: 1050px)
+{ 	
+	.page-wrapper {
+		background-position: 20%;
 	}
 }
 @media screen and (max-width: 915px)
@@ -402,7 +408,7 @@ button {
 	#main-h2 {font-size: 1.6em;}
 	.title-block h2 {font-size: 2em;}
 	.page-wrapper {
-		background-position: 70%;
+		background-position: 30%;
 	}
 }
 @media screen and (max-width: 600px)
