@@ -9,10 +9,9 @@ order: 5
 <div class="intro-block">We leverage advanced Technologies and Artificial Intelligence to create innovative, secure, and efficient solutions.<br /> Our expertise ensures that we meet the unique and evolving needs of our clients, enhancing their Digital Security and Operational Resilience.</div>
 <div class="line-block top15em"></div>
 <div class="text-block">
-<h3>Back-end</h3>
 <div class="pics-block">
 <div class="pic"><img src="/static/img/python-logo.png" width=180 height=120></div>
-<div class="pic"><img src="/static/img/mongodblogo.png" width=180 height=120></div>
+<div class="pic"><img src="/static/img/sqllogo.png" width=180 height=120></div>
 <div class="pic"><img src="/static/img/javalogo.png" width=180 height=120></div>
 <div class="pic"><img src="/static/img/restapilogo.png" width=180 height=120></div>
 <div class="pic"><img src="/static/img/nodejslogo.png" width=180 height=120></div>
