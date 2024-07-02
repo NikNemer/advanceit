@@ -4,7 +4,7 @@ language: en
 order: 5
 ---
 <a id="tech"></a>
-<div class="title-block center"><h2>Our Technologies</h2></div>
+<div class="title-block center"><h2>Tools & Technologies</h2></div>
 <div class="content-block">
 <div class="intro-block">We leverage advanced Technologies and Artificial Intelligence to create innovative, secure, and efficient solutions.<br /> Our expertise ensures that we meet the unique and evolving needs of our clients, enhancing their Digital Security and Operational Resilience.</div>
 <div class="line-block top25em bottom3em"></div>
