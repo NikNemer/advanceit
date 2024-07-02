@@ -188,6 +188,7 @@ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; font-style: italic;
 .section4 .proj-block.pb3 .pb-pic{ background-image: url("/static/img/agri.jpg"); background-position: 50% 50%;}
 .section6 { background-color:#F0F0F0;padding-bottom:0 !important; background-image: url("/static/img/lbg2.png");background-position: 80% 0%;background-repeat: no-repeat;}
 .section6 .map-block { height:400px; }
+.addr {display: inline-block;}
 .addr .addrlogo {width: 100px;height:100px; background-position: 0% 0%;background-repeat: no-repeat;
 background-origin: initial;
     background-position: 50%;
