@@ -389,7 +389,7 @@ button {
 
 
 @media screen and (max-width: 915px)
-{ 	#mmenu {display:none; background-color:#FFF;}
+{ 	#mmenu {display:none; background-color:#366dc7;}
 	#mmenulogo {display:inline-block;}
 	#mmenu.inline .serv {display: block; padding: 15px 0;}
 	#main-h1 {font-size: 3em;}
