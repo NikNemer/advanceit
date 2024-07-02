@@ -64,7 +64,7 @@ header {
     position: relative;
     z-index: 500;
 }
-
+.header-menu {text-align:center;}
 #mmenulogo { display:none;color:#1ccdda;background-color: #2b3694;text-decoration: none;padding: .25em .5em; border-radius: .25em;margin-left:20px;}
 #mmenulogo:hover {cursor: pointer;}
 
@@ -410,6 +410,7 @@ button {
 	.page-wrapper {
 		background-position: 30%;
 	}
+	.header-menu {text-align: left;}
 }
 @media screen and (max-width: 600px)
 { 
@@ -426,6 +427,7 @@ button {
 	  .page-wrapper {
 		background-position: 100%;
 	}
+	.header-menu {text-align: left;}
 }
 @media screen and (min-width:768px) {
 	:root {
