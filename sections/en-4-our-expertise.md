@@ -19,16 +19,13 @@ order: 5
 <div class="pic"><img src="/static/img/jslogo.png" width=180 height=120></div>
 </div>
 <div class="pics-block">
-<div class="pic"><img src="/static/img/copilotlogo.png" width=180 height=120></div>
 <div class="pic"><img src="/static/img/chatgptlogo.png" width=180 height=120></div>
+<div class="pic"><img src="/static/img/copilotlogo.png" width=180 height=120></div>
 </div>
-<h3>Controls, Frameworks, Compliance</h3>
 <div class="pics-block">
-<div class="pic"><img src="/static/img/kubernetes-logo.png" width=180 height=120></div>
-<div class="pic"><img src="/static/img/jetbrains-teamcity-logo.png" width=180 height=120></div>
-<div class="pic"><img src="/static/img/rancherlogo.png" width=180 height=120></div>
-<div class="pic"><img src="/static/img/logo-jenkins.png" width=180 height=120></div>
-<div class="pic"><img src="/static/img/awslogo.png" width=180 height=120></div>
+<div class="pic"><img src="/static/img/nistcsf-logo.png" width=180 height=120></div>
+<div class="pic"><img src="/static/img/nistrmf-logo.png" width=180 height=120></div>
+<div class="pic"><img src="/static/img/gdpr-logo.png" width=180 height=120></div>
 </div>
 
 </div>
