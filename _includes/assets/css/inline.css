@@ -100,12 +100,15 @@ header {
 	background-repeat: no-repeat;
     background-origin: initial;
     background-position: 100%;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover; 
+	-khtml-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
 	background-color: #111c7d;
     width: 100%;
+	height: 100%; 
     overflow: hidden;
 	}
 #section_main .page-wrapper, #section_main .page-background, #section_main .content-wrapper {
