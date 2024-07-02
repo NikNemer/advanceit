@@ -12,10 +12,15 @@ order: 5
 <div class="text-block">
 
 <div class="pics-block">
+<div class="pic"><img src="/static/img/chronicle-logo.png" width=180 height=120></div>
+<div class="pic"><img src="/static/img/splunk-logo.png" width=180 height=120></div>
+<div class="pic"><img src="/static/img/tcpdunp-logo.png" width=180 height=120></div>
+<div class="pic"><img src="/static/img/wireshark-logo.png" width=180 height=120></div>
+</div>
+<div class="pics-block">
 <div class="pic"><img src="/static/img/python-logo.png" width=180 height=120></div>
 <div class="pic"><img src="/static/img/sqllogo.png" width=180 height=120></div>
 <div class="pic"><img src="/static/img/deblogo.png" width=180 height=120></div>
-<div class="pic"><img src="/static/img/javalogo.png" width=180 height=120></div>
 <div class="pic"><img src="/static/img/jslogo.png" width=180 height=120></div>
 </div>
 <div class="pics-block">
