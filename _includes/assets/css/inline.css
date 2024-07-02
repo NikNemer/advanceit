@@ -131,6 +131,7 @@ header {
 .page-background .content-wrapper {max-width:1200px;margin: 0 auto;padding: .5em 0 0.5em 0;}
 .line-block {width:50%; height:1px; background-color:#CCC;margin: 5px auto 5px auto !important;}
 .top15em {margin-top:1.5em !important;}
+.bottom15em {margin-bottom:1.5em !important;}
 .title-block {}
 .title-block h2 {padding: 1.5em; 
 	/* font-family: 'Raleway', sans-serif; */
