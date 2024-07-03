@@ -67,8 +67,8 @@ header {
     z-index: 500;
 	text-align: center;
 }
-.header-menu {text-align:center;padding: 0 3em;}
-.header-menu .header-menu-content {text-align:left;max-width: 1200px; margin: 0 auto;}
+.header-menu {text-align:center;padding: 0;}
+.header-menu .header-menu-content {text-align:left;max-width: 1200px; margin: 0 auto;padding: 0 3em;}
 #mmenulogo { display:none;color:#1ccdda;background-color: #2b3694;text-decoration: none;padding: .25em .5em; border-radius: .25em;margin-left:20px;}
 #mmenulogo:hover {cursor: pointer;}
 
