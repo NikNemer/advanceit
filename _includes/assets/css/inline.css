@@ -271,8 +271,8 @@ background-origin: initial;
   transform: scaleX(1);
 }
 .serv:hover {
-	-webkit-transform: translateY(-7px);
-	transform: translateY(-7px);
+	-webkit-transform: translateY(-10px);
+	transform: translateY(-10px);
 	cursor: pointer;
 }
 
