@@ -196,7 +196,7 @@ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; font-style: italic;
 .section6 { background-color:#F0F0F0;padding-bottom:0 !important; background-image: url("/static/img/lbg2.png");background-position: 80% 0%;background-repeat: no-repeat;}
 .section6 .map-block { height:400px; }
 .addr {display: inline-block;vertical-align: top; padding: 0 1em 1.5em 1em;}
-.addr .addrlogo {width: 150px;height:150px; background-position: 0% 0%;background-repeat: no-repeat;
+.addr .addrlogo {width: 150px;height:150px; background-repeat: no-repeat;
 background-origin: initial;
     background-position: 50% 0%;
     background-size: cover;
@@ -208,7 +208,7 @@ background-origin: initial;
 .addr .alen {background-image: url("/static/img/logo-ai.png");}
 .addr .addrname {line-height:1.5em;text-align:left;}
 .addr .addrnm {font-family: 'Raleway', sans-serif;text-transform: uppercase; font-size: 1.15em; line-height:1.5em;text-align:left;}
-.addr .addrs {vertical-align: top;padding: 1em 0 1em 0;}
+.addr .addrs {vertical-align: top;padding: 1em 0 1em .25em;}
 .pics-block .pic {display: inline-block;width:180px;padding: 0 15px;}
 .inline {display: inline-block;padding: 0 15px;vertical-align:middle;}
 .inline .serv {display: inline-block;margin: 0 20px; /*font-family: 'Raleway', sans-serif;*/ text-transform: uppercase; font-size: 1em; font-weight: bold;}
