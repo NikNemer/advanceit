@@ -14,7 +14,7 @@ var tStart = 0 // Start transition 100px from top
   , oDiff = oEnd - oStart;
 
 $(document).ready(function(){
-  if ($(window).width() < 920) {
+  if ($(window).width() < 605) {
     $( "#mmenu" ).hide();
     $( "#mmenu .serv a" ).on( "click", function() {
       $("#mmenu:visible").hide();
