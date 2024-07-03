@@ -212,7 +212,7 @@ background-origin: initial;
 .addr .addrs {vertical-align: top;padding: 1em 0 1em .25em;}
 .pics-block .pic {display: inline-block;width:180px;padding: 0 15px;}
 .inline {display: inline-block;padding: 0 15px;vertical-align:middle;}
-.inline .serv {display: inline-block;margin: 0 20px; /*font-family: 'Raleway', sans-serif;*/ text-transform: uppercase; font-size: 1em; font-weight: bold;transition: all 500ms ease-out;}
+.inline .serv {display: inline-block;margin: 0 20px; /*font-family: 'Raleway', sans-serif;*/ text-transform: uppercase; font-size: 1em; font-weight: bold;}
 .inline .serv a, .inline .serv a:active, .inline .serv  a:visited {color:#ffffff;text-decoration: none;}
 .inline .serv a:hover {border-bottom: 2px solid #ffffff;text-decoration: none;}
 #logo {padding-top: 10px;}
@@ -224,7 +224,7 @@ background-origin: initial;
     margin: 2.5em auto;}
 .section2 .content-block .services-list {vertical-align:top;}
 .section2 .content-block .serv {position:relative;display:inline-block;font-size: 1.15em; line-height:1.5em;padding:2em;border-radius: 20px;
-	/*box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;*/max-width:365px;margin: 15px;vertical-align:top; text-align:left; background-color: #fff;}
+	/*box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;*/max-width:365px;margin: 15px;vertical-align:top; text-align:left; background-color: #fff;transition: all 500ms ease-out;}
 .serv .serv-icon { /* position: absolute; left:0px; top:0px; */ padding-bottom:0;text-align: center;    width: 100%;
     display: flex;
     align-items: center;
