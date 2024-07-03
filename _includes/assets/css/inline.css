@@ -259,7 +259,7 @@ background-origin: initial;
 	right: 0;
 	bottom: 0;
 	min-width: 100%;
-	border-bottom: 20px solid #c8ff59;
+	border-bottom: 20px solid #dfdfdf;
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
 	transform: scaleX(0);
@@ -273,6 +273,7 @@ background-origin: initial;
 .serv:hover {
 	-webkit-transform: translateY(-7px);
 	transform: translateY(-7px);
+	cursor: pointer;
 }
 
 #sendform {    max-width: 600px;
