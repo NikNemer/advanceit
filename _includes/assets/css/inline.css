@@ -48,8 +48,9 @@ header,
 main,
 footer {
 	padding: 0;
-}
-footer{text-align:center;}
+	background-color: #111c7d;
+text-align:center;
+color: #fff;}
 
 main {
 	padding-bottom: 2em;
@@ -105,10 +106,12 @@ header {
 .request {
 		color: #fff;
 		padding: 10px 16px;
-		background: #e5453d;
-		border-radius: 8px;
-		border: none;
+		border: 0px solid var(--primary);
+		background-color: #e8194d;
+		color: var(--secondary);
 		cursor: pointer;
+		border-radius: .5em;
+
 		font-style: normal;
 		font-weight: 600;
 		font-size: 14px;
@@ -401,9 +404,7 @@ button {
 	}
 }
 @media screen and (max-width: 915px)
-{ 	#mmenu {display:none; background-color:#366dc7;}
-	#mmenulogo {display:inline-block;}
-	#mmenu.inline .serv {display: block; padding: 15px 0;}
+{
 	#main-h1 {font-size: 3em;}
 	#main-h2 {font-size: 1.6em;}
 	.title-block h2 {font-size: 2em;}
@@ -413,7 +414,9 @@ button {
 	.header-menu {text-align: left;}
 }
 @media screen and (max-width: 600px)
-{ 
+{  	#mmenu {display:none; background-color:#366dc7;}
+#mmenulogo {display:inline-block;}
+#mmenu.inline .serv {display: block; padding: 15px 0;}
 	.section4 .proj-block {display: block;width:auto;max-width:500px;margin:0 auto !important;}
 	.section0 .flex-container {
 		flex-direction: column;
