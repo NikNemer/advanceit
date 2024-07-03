@@ -65,6 +65,7 @@ main > article :first-child {
 header {
     position: relative;
     z-index: 500;
+	text-align: center;
 }
 .header-menu {text-align:left;padding: 0 3em; max-width: 1200px;}
 #mmenulogo { display:none;color:#1ccdda;background-color: #2b3694;text-decoration: none;padding: .25em .5em; border-radius: .25em;margin-left:20px;}
