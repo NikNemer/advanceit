@@ -7,7 +7,7 @@ order: 5
 <div class="title-block center"><h2>Tools & Technologies</h2></div>
 <div class="content-block">
 <div class="intro-block">We leverage advanced Tools, Technologies and Artificial Intelligence to create innovative, secure, and efficient solutions.<br /> Our expertise ensures that we meet the unique and evolving needs of our clients, enhancing their Digital Security and Operational Resilience.</div>
-<div class="line-block top25em bottom3em"></div>
+<div class="line-block top25em bottom2em"></div>
 
 <div class="text-block">
 <h3>SIEM & NPA Tools</h3>
