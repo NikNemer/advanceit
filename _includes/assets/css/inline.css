@@ -248,7 +248,7 @@ background-origin: initial;
 	background: var(--accent-color);
   }
   .serv:hover .serv-title {
-	color: #111c7d;
+	color: #ce1212;
   }
 .serv .serv-title {font-size: 1.3em;font-weight:normal; line-height:1.5em; padding-bottom:1em;text-align: center;}
 .serv .serv-text {font-size: 1em; line-height:1.5em; padding-bottom:1em;color:#333;}
