@@ -48,9 +48,10 @@ header,
 main,
 footer {
 	padding: 0;
-	background-color: #111c7d;
-text-align:center;
-color: #fff;}
+}
+footer{	background-color: #111c7d;
+	text-align:center;
+	color: #fff;}
 
 main {
 	padding-bottom: 2em;
