@@ -109,7 +109,6 @@ header {
 		padding: 10px 16px;
 		border: 0px solid var(--primary);
 		background-color: #e8194d;
-		color: var(--secondary);
 		cursor: pointer;
 		border-radius: .5em;
 
@@ -123,6 +122,7 @@ header {
 		text-align: center;
 		margin-top: 2em !important;
 	}
+	.request a, .request a:active, .request a:visited {color: #fff;}
 .page-wrapper {position: relative;     
 	background-image: url("/static/img/csec.jpg");
 	background-repeat: no-repeat;
