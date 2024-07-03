@@ -1,7 +1,6 @@
 ---
 layout: layouts/home.njk
-title: "Innovations Development and Implementation for the areas: Logistics,
-  Retail and Agrifood"
+title: "AdvanceIT - Expert Solutions for the Digital Security of Your Business"
 date: 2022-01-19T16:06:27.260Z
 permalink: /en/index.html
 eleventyNavigation:
