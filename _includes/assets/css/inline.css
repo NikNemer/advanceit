@@ -259,7 +259,7 @@ background-origin: initial;
 	right: 0;
 	bottom: 0;
 	min-width: 100%;
-	border-bottom: 2px solid #c8ff59;
+	border-bottom: 20px solid #c8ff59;
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
 	transform: scaleX(0);
