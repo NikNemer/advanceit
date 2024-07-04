@@ -212,6 +212,7 @@ background-origin: initial;
 .addr .addrs {vertical-align: top;padding: 1em 0 1em .25em;}
 .pics-block .pic {display: inline-block;width:180px;padding: 0 15px;}
 .inline {display: inline-block;padding: 0 15px;vertical-align:middle;}
+#mmenu {display:inline-block; background-color:none;}
 #mmenu .mm {display: inline-block;margin: 0 20px; /*font-family: 'Raleway', sans-serif;*/ text-transform: uppercase; font-size: 1em; font-weight: bold; position: relative;}
 #mmenu .mm a, #mmenu .mm a:active, #mmenu .mm  a:visited {color:#ffffff;text-decoration: none !important;}
 #mmenu .mm a:hover {text-decoration: none !important;}
@@ -442,21 +443,21 @@ button {
 }
 
 @media screen and (max-width: 1315px)
-{ 	#mmenu {display:inline-block; background-color:none;}
+{ 	
 	.page-wrapper {
 		background-position: 0%;
 	}
 }
 @media screen and (max-width: 1050px)
 { 	
-	#mmenu {display:inline-block; background-color:none;}
+	
 	.page-wrapper {
 		background-position: 20%;
 	}
 }
 @media screen and (max-width: 915px)
 {
-	#mmenu {display:inline-block; background-color:none;}
+	
 	#main-h1 {font-size: 3em;}
 	#main-h2 {font-size: 1.6em;}
 	.title-block h2 {font-size: 2em;}

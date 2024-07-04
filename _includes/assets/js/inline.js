@@ -21,6 +21,7 @@ $(document).ready(function(){
         });
 
   }
+  
     $(document).scroll(function() {
         var p = ($(this).scrollTop() - tStart) / (tEnd - tStart); // % of transition
         p = Math.min(1, Math.max(oStart, p)); // Clamp to [0, 1]
