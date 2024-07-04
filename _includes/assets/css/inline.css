@@ -212,17 +212,17 @@ background-origin: initial;
 .addr .addrs {vertical-align: top;padding: 1em 0 1em .25em;}
 .pics-block .pic {display: inline-block;width:180px;padding: 0 15px;}
 .inline {display: inline-block;padding: 0 15px;vertical-align:middle;}
-.inline .mm {display: inline-block;margin: 0 20px; /*font-family: 'Raleway', sans-serif;*/ text-transform: uppercase; font-size: 1em; font-weight: bold; position: relative;}
-.inline .mm a, .inline .mm a:active, .inline .mm  a:visited {color:#ffffff;text-decoration: none !important;}
-.inline .mm a:hover {border-bottom: 2px solid #ffffff;text-decoration: none !important;}
+#mmenu .mm {display: inline-block;margin: 0 20px; /*font-family: 'Raleway', sans-serif;*/ text-transform: uppercase; font-size: 1em; font-weight: bold; position: relative;}
+#mmenu .mm a, #mmenu .mm a:active, #mmenu .mm  a:visited {color:#ffffff;text-decoration: none !important;}
+#mmenu .mm a:hover {text-decoration: none !important;}
 
 #mmenu .mm a:before {
     content: "";
     position: absolute;
     height: 2px;
-    bottom: -6px;
+    bottom: -4px;
     left: 0;
-    background-color: #c8ff93;
+    background-color: #baff7a;
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
