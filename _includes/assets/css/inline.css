@@ -215,6 +215,24 @@ background-origin: initial;
 .inline .mm {display: inline-block;margin: 0 20px; /*font-family: 'Raleway', sans-serif;*/ text-transform: uppercase; font-size: 1em; font-weight: bold;}
 .inline .mm a, .inline .mm a:active, .inline .mm  a:visited {color:#ffffff;text-decoration: none;}
 .inline .mm a:hover {border-bottom: 2px solid #ffffff;text-decoration: none;}
+
+#mmenu .mm a:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background-color: var(--nav-hover-color);
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  #mmenu .mm a:hover:before, #mmenu .mm .active:before {
+    visibility: visible;
+    width: 100%;
+  }
+
 #logo {padding-top: 10px;}
 
 .section2 .content-wrapper {margin: 0 auto;
