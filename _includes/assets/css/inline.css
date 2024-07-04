@@ -213,7 +213,7 @@ background-origin: initial;
 .pics-block .pic {display: inline-block;width:180px;padding: 0 15px;}
 .inline {display: inline-block;padding: 0 15px;vertical-align:middle;}
 .inline .mm {display: inline-block;margin: 0 20px; /*font-family: 'Raleway', sans-serif;*/ text-transform: uppercase; font-size: 1em; font-weight: bold; position: relative;}
-.inline .mm a, .inline .mm a:active, .inline .mm  a:visited {color:#ffffff;text-decoration: none;}
+.inline .mm a, .inline .mm a:active, .inline .mm  a:visited {color:#ffffff;text-decoration: none !important;}
 .inline .mm a:hover {border-bottom: 2px solid #ffffff;text-decoration: none !important;}
 
 #mmenu .mm a:before {
