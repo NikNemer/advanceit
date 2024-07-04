@@ -448,7 +448,7 @@ button {
 @media screen and (max-width: 600px)
 {  	#mmenu {display:none; background-color:#366dc7;}
 #mmenulogo {display:inline-block;}
-#mmenu.inline .serv {display: block; padding: 15px 0;}
+#mmenu.inline .mm {display: block; padding: 15px 0;}
 	.section4 .proj-block {display: block;width:auto;max-width:500px;margin:0 auto !important;}
 	.section0 .flex-container {
 		flex-direction: column;
