@@ -219,8 +219,8 @@ background-origin: initial;
 #mmenu .mm a:before {
     content: "";
     position: absolute;
-    height: 2px;
-    bottom: -4px;
+    height: 3px;
+    bottom: -3px;
     left: 0;
     background-color: #baff7a;
     visibility: hidden;
