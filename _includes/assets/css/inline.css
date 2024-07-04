@@ -442,21 +442,21 @@ button {
 }
 
 @media screen and (max-width: 1315px)
-{ 	#mmenu {display:inline-block; background-color:#366dc7;}
+{ 	#mmenu {display:inline-block; background-color:none;}
 	.page-wrapper {
 		background-position: 0%;
 	}
 }
 @media screen and (max-width: 1050px)
 { 	
-	#mmenu {display:inline-block; background-color:#366dc7;}
+	#mmenu {display:inline-block; background-color:none;}
 	.page-wrapper {
 		background-position: 20%;
 	}
 }
 @media screen and (max-width: 915px)
 {
-	#mmenu {display:inline-block; background-color:#366dc7;}
+	#mmenu {display:inline-block; background-color:none;}
 	#main-h1 {font-size: 3em;}
 	#main-h2 {font-size: 1.6em;}
 	.title-block h2 {font-size: 2em;}

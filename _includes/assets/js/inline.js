@@ -19,7 +19,7 @@ $(document).ready(function(){
     $( "#mmenu .serv a" ).on( "click", function() {
       $("#mmenu:visible").hide();
         });
-    
+
   }
     $(document).scroll(function() {
         var p = ($(this).scrollTop() - tStart) / (tEnd - tStart); // % of transition
