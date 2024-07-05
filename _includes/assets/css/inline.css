@@ -213,7 +213,7 @@ background-origin: initial;
 .pics-block .pic {display: inline-block;width:180px;padding: 0 15px;}
 .inline {display: inline-block;padding: 0 15px;vertical-align:middle;}
 #mmenu {display:inline-block; background-color:none;}
-#mmenu .mm {display: inline-block;margin: 0 20px; /*font-family: 'Raleway', sans-serif;*/ text-transform: uppercase; font-size: 1em; font-weight: bold; position: relative;padding:0;}
+#mmenu .mm {display: inline-block;margin: 0 20px; /*font-family: 'Raleway', sans-serif;*/ text-transform: uppercase; font-size: 0.92em; font-weight: bold; position: relative;padding:0;}
 #mmenu .mm a, #mmenu .mm a:active, #mmenu .mm  a:visited {color:#ffffff;text-decoration: none !important;}
 #mmenu .mm a:hover {text-decoration: none !important;}
 
