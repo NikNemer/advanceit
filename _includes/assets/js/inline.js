@@ -29,7 +29,7 @@ $(document).ready(function(){
         $("#mmenu:visible").hide();
       });
     } else {
-      $("#mmenu").show();
+      $("#mmenu").css("display", "inline-block");
     }
   }
 
