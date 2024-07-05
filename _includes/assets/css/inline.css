@@ -154,7 +154,7 @@ header {
 .section0 {padding-bottom:3em;}
 .section1 {padding:0 1.5em 0 1.5em;}
 .section1 .content-wrapper {border-left: 3px solid #c8ff59;max-width:1200px;margin: 0 auto;padding: .5em 0 0.5em 2em;}
-.section1 .content-wrapper .core-title { line-height:1.5em; /* font-family: 'Raleway', sans-serif; */ font-weight:bold; text-transform: none; font-size: 1.4em;color:#333;padding:0 0 15px 0;}
+.section1 .content-wrapper .core-title { line-height:1.3em; /* font-family: 'Raleway', sans-serif; */ font-weight:bold; text-transform: none; font-size: 1.15em;color:#333;padding:0 0 15px 0;}
 .section1 .content-wrapper .core-text {margin: 0 auto; font-size: 1em; line-height:1.5em;}
 .section h2, .section.content-block { padding: 1.5em; margin:0; }
 .section0 {padding:3em 1.5em 1.5em 1.5em;}
@@ -269,7 +269,7 @@ background-origin: initial;
   .serv:hover .serv-title {
 	color: #ce1212;
   }
-.serv .serv-title {font-size: 1.3em;font-weight:normal; line-height:1.5em; padding-bottom:1em;text-align: center;}
+.serv .serv-title {font-size: 1.3em;font-weight:normal; line-height:1.5em; padding-bottom:1em;text-align: center;font-family: Montserrat, sans-serif;color: #777;}
 .serv .serv-text {font-size: 1em; line-height:1.5em; padding-bottom:1em;color:#333;}
 .serv:before {
 	position: absolute;
@@ -278,7 +278,7 @@ background-origin: initial;
 	right: 0;
 	bottom: 0;
 	min-width: 100%;
-	border-bottom: 20px solid #dfdfdf;
+	border-bottom: 20px solid #eaeaea;
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
 	transform: scaleX(0);
