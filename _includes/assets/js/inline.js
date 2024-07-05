@@ -21,7 +21,26 @@ $(document).ready(function(){
         });
 
   }
-  
+
+  function toggleMenu() {
+    if ($(window).width() < 605) {
+      $("#mmenu").hide();
+      $("#mmenu .serv a").on("click", function() {
+        $("#mmenu:visible").hide();
+      });
+    } else {
+      $("#mmenu").show();
+    }
+  }
+
+  // Initial check
+  toggleMenu();
+
+  // On resize check
+  $(window).resize(function() {
+    toggleMenu();
+  });
+
     $(document).scroll(function() {
         var p = ($(this).scrollTop() - tStart) / (tEnd - tStart); // % of transition
         p = Math.min(1, Math.max(oStart, p)); // Clamp to [0, 1]
