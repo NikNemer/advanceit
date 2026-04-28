@@ -39,6 +39,7 @@ mmenuBtn.addEventListener('click', () => {
   }
 });
 
+
 // Close mobile menu when a nav link is clicked
 mmenu.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
