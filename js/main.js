@@ -1,14 +1,3 @@
-// Netlify Identity — redirect to /admin after login
-if (window.netlifyIdentity) {
-  window.netlifyIdentity.on('init', user => {
-    if (!user) {
-      window.netlifyIdentity.on('login', () => {
-        document.location.href = '/admin/';
-      });
-    }
-  });
-}
-
 const header   = document.querySelector('.fixed-top');
 const mmenu    = document.getElementById('mmenu');
 const mmenuBtn = document.getElementById('mmenulogo');
