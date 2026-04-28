@@ -53,7 +53,7 @@ const updateHeader = () => {
   const scrollTop = window.scrollY;
   const progress  = Math.min(1, Math.max(OPACITY_MIN, scrollTop / SCROLL_END));
   const opacity   = OPACITY_MIN + OPACITY_DIFF * progress;
-  header.style.backgroundColor = `rgba(15, 99, 174, ${opacity.toFixed(3)})`;
+  header.style.backgroundColor = `rgba(0, 102, 193, ${opacity.toFixed(3)})`;
   header.style.display = scrollTop < HIDE_AFTER ? '' : 'none';
   rafPending = false;
 };

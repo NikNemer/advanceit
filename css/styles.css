@@ -78,7 +78,7 @@ header {
   inset: 0 0 auto 0;
   z-index: 1030;
   height: var(--nav-height);
-  background: rgba(15, 99, 174, 0.15);
+  background: rgba(0, 102, 193, 0.28);
 }
 
 .nav-inner {
@@ -93,7 +93,7 @@ header {
 #logo {
   display: flex;
   align-items: center;
-  padding: 10px 15px 0;
+  padding: 4px 15px 0;
   flex-shrink: 0;
 }
 
@@ -119,10 +119,11 @@ header {
 
 #mmenu li {
   font-family: 'Figtree', Helvetica, Arial, sans-serif;
-  font-size: 1em;
-  font-weight: 700;
+  font-size: .93em;
+  font-weight: 400;
   position: relative;
   margin: 0 20px;
+  text-transform: uppercase;
 }
 
 #mmenu li a,
@@ -195,7 +196,7 @@ h1#main-h1 {
   text-transform: uppercase;
   
   font-size: clamp(1.8rem, 4.3vw, 2.75em);
-  color: var(--green-light);
+  color: var(--green-lime);
   line-height: 1;
   padding: .5em 0;
   margin: 0;
@@ -584,7 +585,7 @@ p#main-h2 {
 }
 
 .section-ir .title-block h2 {
-  color: var(--myblue2);
+  color: var(--green-lime);
 }
 
 .ir-lead {
@@ -684,7 +685,7 @@ p#main-h2 {
   height: 280px;
   overflow: hidden;
   cursor: grab;
-  background: linear-gradient(to top, #ddd 0%, #eee 50%, #ffffff 100%);
+  background: linear-gradient(to top, #eee 0%, #ffffff 50%);
 }
 .globe-container:active { cursor: grabbing; }
 
@@ -696,7 +697,7 @@ p#main-h2 {
 }
 
 .stats-bar {
-  background: linear-gradient(135deg, #111c7d 0%, #0b1260 50%, #07103f 100%);
+  background: linear-gradient(135deg, #afd5fc 0%, #1c8cff 50%, #afd5fc 100%);
   padding: 2.5em 1.5em;
 }
 
@@ -719,15 +720,15 @@ p#main-h2 {
 
 .stat-num {
   font-family: 'Bitcount Single', monospace;
-  font-size: 2.8em;
-  color: var(--green-lime);
+  font-size: 2.75em;
+  color: var(--contrast-color);
   line-height: 1;
   font-weight: 400;
 }
 
 .stat-label {
   font-size: .75em;
-  color: rgba(255,255,255,.55);
+  color: rgba(255,255,255,.70);
   text-transform: uppercase;
   letter-spacing: 1.5px;
   margin-top: .4em;
@@ -737,7 +738,7 @@ p#main-h2 {
 .stat-sep {
   width: 1px;
   height: 44px;
-  background: rgba(255,255,255,.12);
+  background: rgba(255,255,255,.32);
   flex-shrink: 0;
 }
 
@@ -886,6 +887,7 @@ button {
     flex-direction: column;
     background-color: #366dc7;
     padding: .5em 1.5em 1em;
+    
   }
 
   #mmenu.open {
