@@ -86,6 +86,9 @@ window.addEventListener('scroll', () => {
     { name: 'Warsaw',      lon:   21.012, lat:  52.230 },
     { name: 'Dublin',      lon:   -6.260, lat:  53.350 },
     { name: 'Morden',      lon:   -0.195, lat:  51.402 },
+    { name: 'Osaka',       lon:  135.502, lat:  34.694 },
+    { name: 'Seattle',     lon: -122.332, lat:  47.606 },
+    { name: 'Los Angeles', lon: -118.244, lat:  34.052 },
   ];
 
   const W = 600, R = 260;
