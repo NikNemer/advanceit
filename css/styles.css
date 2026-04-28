@@ -10,6 +10,7 @@
   --myblue:        #62a3ff;
   --myblue2:       #34a6ff;
   --mygray:        #606060;
+  --mymiddlegray:  #888;
   --mylightgray:   #bbb;
   --green-light:   #c8ff93;
   --green-lime:    #c8ff59;
@@ -56,7 +57,7 @@ header, main, footer {
 }
 
 main {
-  padding-bottom: 2em;
+  padding-bottom: 0em;
 }
 
 footer {
@@ -93,7 +94,7 @@ header {
 #logo {
   display: flex;
   align-items: center;
-  padding: 4px 15px 0;
+  padding: 0px 15px 0;
   flex-shrink: 0;
 }
 
@@ -161,11 +162,10 @@ header {
 
 .page-wrapper {
   position: relative;
-  background-image: url("/static/img/csec.jpg");
   background-repeat: no-repeat;
   background-position: 100%;
   background-size: auto 100%;
-  background-color: var(--blue-dark);
+  background: linear-gradient(135deg, #0b1260 0%, #0061c5 50%, #0b1260 100%);
 }
 
 .page-wrapper .page-background {
@@ -263,7 +263,7 @@ p#main-h2 {
 /* ── Section titles ──────────────────────────────────────── */
 
 .title-block h2 {
-  padding: 1.5em;
+  padding: 1.5em 1.5em 1.5em 2.2em;
   font-family: 'Bitcount Single', monospace;
   font-weight: 400;
   text-transform: uppercase;
@@ -574,7 +574,7 @@ p#main-h2 {
 /* ── Section IR — Incident Response ─────────────────────── */
 
 .section-ir {
-  background-color: #0b1260;
+  background: linear-gradient(135deg, #0b1260 0%, #0061c5 50%, #0b1260 100%);
   color: #fff;
 }
 
@@ -601,7 +601,7 @@ p#main-h2 {
   gap: 1.25rem;
   list-style: none;
   padding: 0;
-  margin: 0 0 3em;
+  margin: 0 0 1.5em;
 }
 
 .ir-phase {
@@ -753,108 +753,126 @@ p#main-h2 {
 
 /* ── Section 6 — Contacts ────────────────────────────────── */
 
-.section6 {
-  background-color: #f0f0f0;
-  background-image: url("/static/img/lbg2.png");
-  background-position: 80% 0%;
-  background-repeat: no-repeat;
+/* ── Section — Contacts & Form ───────────────────────────── */
+
+.section-contact {
+  background: linear-gradient(135deg, #bbb 0%, #f0f0f0 50%, #bbb 100%);
+  color: var(--mygray);
 }
 
-.section6 .map-block {
-  height: 400px;
+.section-contact .title-block h2 {
+  color: var(--mygray);
 }
 
-.contacts-body {
-  padding: 0 1em;
+.contact-topper {
+  background: linear-gradient(135deg, #afd5fc 0%, #1c8cff 50%, #afd5fc 100%);
+  
+  height: 2em;
 }
 
-.addr {
-  display: inline-flex;
+.contact-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5em 3.5em;
+}
+
+.contact-cols {
+  display: flex;
+  gap: 5em;
   align-items: flex-start;
-  gap: 1em;
-  padding: 0 1em 1.5em;
+  margin-top: 0em;
 }
 
-.addrlogo {
-  width: 150px;
-  height: 150px;
-  background-repeat: no-repeat;
-  background-position: 50% 0%;
-  background-size: cover;
-  overflow: hidden;
+.contact-info {
+  flex: 0 0 260px;
+  padding-top: .5em;
+  background: url("/static/img/advico2.png") no-repeat 30% 0%;
+  padding-top: 100px;
+}
+
+.contact-company {
+  font-weight: 700;
+  font-size: 1.05em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 1.75em;
+}
+
+.contact-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: .75em;
+  margin-bottom: 1.25em;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.contact-detail i {
+  font-size: 1.15em;
+  color: var(--mymiddlegray);
+  margin-top: .18em;
   flex-shrink: 0;
 }
 
-.alru { background-image: url("/static/img/logo-is.png"); }
-.alen { background-image: url("/static/img/logo-ai.png"); }
-
-.addrname {
-  line-height: 1.5;
-  text-align: left;
+.contact-detail a[href],
+.contact-detail a[href]:visited {
+  color: #333;
 }
 
-.addrnm {
-  text-transform: uppercase;
-  font-size: 1em;
-  line-height: 1.5;
-  font-weight: 700;
+.contact-form-wrap {
+  flex: 1;
 }
 
-.addrname address {
-  font-style: normal;
-  padding-top: 0;
+.contact-form-wrap form {
+  padding: 0;
 }
 
-.addrname address a[href],
-.addrname address a[href]:visited {
-  color: inherit;
-}
-
-.map-frame {
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
   border: 0;
-  display: block;
 }
 
-/* ── Contact form ────────────────────────────────────────── */
-
-#sendform {
-  max-width: 600px;
-  font-size: 1em;
-  line-height: 1.5;
-  background-color: #eee;
-  margin: 1em auto;
-  padding: .25em 2em;
-  border-radius: .5em;
-}
-
-form {
-  display: grid;
-  padding: 2em 0;
-  gap: 0;
-}
-
-form label {
-  display: none;
-}
-
-input, textarea, button {
+.contact-form-wrap input,
+.contact-form-wrap textarea {
   width: 100%;
-  padding: .8em;
+  padding: .8em 1em;
   margin-bottom: 1em;
   font-size: 1rem;
   font-family: 'Figtree', Helvetica, Arial, sans-serif;
   border-radius: .5em;
+  border: 1px solid #eee;
+  background: #fff;
+  color: #333;
 }
 
-input, textarea {
-  border: none;
+.contact-form-wrap input::placeholder,
+.contact-form-wrap textarea::placeholder {
+  color: #aaa;
 }
 
-button {
+.contact-form-wrap button {
+  width: auto;
+  padding: 10px 16px;
+  font-size: 0.92em;
+  line-height: 20px;
+  letter-spacing: -.006em;
+  font-family: 'Figtree', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  border-radius: .5em;
   border: none;
   background-color: var(--red);
   color: #fff;
   cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.contact-form-wrap button:hover {
+  background-color: #c0102f;
 }
 
 .hidden-field {
@@ -909,4 +927,19 @@ button {
   }
 
   .page-wrapper { background-position: 100%; }
+
+  .contact-cols {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .contact-info {
+    flex: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-detail {
+    justify-content: center;
+  }
 }
