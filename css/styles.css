@@ -457,8 +457,8 @@ p#main-h2 {
 
 .orbit-scene .title-block h2 {
   position: absolute;
-  top: 57%;
-  left: 51%;
+  top: 64%;
+  left: 50%;
   transform: translate(-50%, -50%);
   z-index: 11;
   padding: 0;
@@ -483,7 +483,7 @@ p#main-h2 {
 
 .orbit-hub {
   position: absolute;
-  top: 42%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100px;
@@ -503,12 +503,12 @@ p#main-h2 {
   transform-origin: 0 50%;
 }
 .orbit-arm--inner {
-  width: 250px;
+  width: 270px;
   animation: arm-cw 28s linear infinite;
   animation-delay: var(--orb-delay, 0s);
 }
 .orbit-arm--outer {
-  width: 380px;
+  width: 370px;
   animation: arm-ccw 44s linear infinite;
   animation-delay: var(--orb-delay, 0s);
 }
@@ -516,10 +516,10 @@ p#main-h2 {
 .orbit-icon {
   position: absolute;
   right: 0;
-  top: 0;
+  top: 50%;
+  margin-top: -75px;
   width: 150px;
   height: 150px;
-  
   display: flex;
   align-items: center;
   justify-content: center;
