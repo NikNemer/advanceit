@@ -457,8 +457,8 @@ p#main-h2 {
 
 .orbit-scene .title-block h2 {
   position: absolute;
-  top: 64%;
-  left: 50%;
+  top: 57%;
+  left: 51%;
   transform: translate(-50%, -50%);
   z-index: 11;
   padding: 0;
@@ -483,7 +483,7 @@ p#main-h2 {
 
 .orbit-hub {
   position: absolute;
-  top: 50%;
+  top: 42%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100px;
@@ -503,12 +503,12 @@ p#main-h2 {
   transform-origin: 0 50%;
 }
 .orbit-arm--inner {
-  width: 270px;
+  width: 250px;
   animation: arm-cw 28s linear infinite;
   animation-delay: var(--orb-delay, 0s);
 }
 .orbit-arm--outer {
-  width: 370px;
+  width: 380px;
   animation: arm-ccw 44s linear infinite;
   animation-delay: var(--orb-delay, 0s);
 }
@@ -516,8 +516,7 @@ p#main-h2 {
 .orbit-icon {
   position: absolute;
   right: 0;
-  top: 50%;
-  margin-top: -75px;
+  top: 0;
   width: 150px;
   height: 150px;
   display: flex;
@@ -544,6 +543,20 @@ p#main-h2 {
 @keyframes arm-ccw  { to { transform: rotate(-360deg); } }
 @keyframes icon-ccw { to { transform: rotate(-360deg); } }
 @keyframes icon-cw  { to { transform: rotate( 360deg); } }
+
+/* animation-delay values — replaces inline style="--orb-delay:Xs" */
+.orb-d0  { --orb-delay:    0s; }
+.orb-d1  { --orb-delay:  -5.6s; }
+.orb-d2  { --orb-delay: -11.2s; }
+.orb-d3  { --orb-delay: -16.8s; }
+.orb-d4  { --orb-delay: -22.4s; }
+.orb-d5  { --orb-delay:  -5.5s; }
+.orb-d6  { --orb-delay:  -11s;  }
+.orb-d7  { --orb-delay: -16.5s; }
+.orb-d8  { --orb-delay:  -22s;  }
+.orb-d9  { --orb-delay: -27.5s; }
+.orb-d10 { --orb-delay:  -33s;  }
+.orb-d11 { --orb-delay: -38.5s; }
 
 @media (prefers-reduced-motion: reduce) {
   .orbit-arm, .orbit-icon { animation-play-state: paused; }
