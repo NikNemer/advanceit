@@ -457,7 +457,7 @@ p#main-h2 {
 
 .orbit-scene .title-block h2 {
   position: absolute;
-  top: 57%;
+  top: 55%;
   left: 51%;
   transform: translate(-50%, -50%);
   z-index: 11;
@@ -483,7 +483,7 @@ p#main-h2 {
 
 .orbit-hub {
   position: absolute;
-  top: 42%;
+  top: 43%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100px;
