@@ -896,8 +896,7 @@ p#main-h2 {
 @media (max-width: 915px) {
   .page-wrapper { background-position: 30%; }
 }
-
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   #mmenulogo { display: inline-flex; }
 
   #mmenu {
@@ -920,6 +919,18 @@ p#main-h2 {
     margin: 0;
     padding: 12px 0;
   }
+  p#main-h2 {
+    color: var(--cyan);
+  }
+}
+@media (max-width: 660px) {
+  .page-background .content-wrapper {
+    background-position: right 0px center;
+    background-size: auto 90%;
+  }
+}
+
+@media (max-width: 600px) {
 
   .about-flex {
     flex-direction: column;
