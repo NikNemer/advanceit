@@ -227,3 +227,114 @@ window.addEventListener('scroll', () => {
     if (spinning) raf = requestAnimationFrame(spin);
   }, { passive: true });
 }());
+
+// ── Hero canvas particle network (tympanus demo-1 style) ──
+(function () {
+  var canvas = document.getElementById('hero-canvas');
+  if (!canvas) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  var ctx = canvas.getContext('2d');
+  var width, height, points, animActive = true;
+
+  // Circular ease-in-out (matches Circ.easeInOut from TweenLite)
+  function easeInOut(t) {
+    t *= 2;
+    if (t < 1) return -0.5 * (Math.sqrt(1 - t * t) - 1);
+    t -= 2;
+    return 0.5 * (Math.sqrt(1 - t * t) + 1);
+  }
+
+  function sqDist(a, b) {
+    return (a.x - b.x) * (a.x - b.x) + (a.y - b.y) * (a.y - b.y);
+  }
+
+  function shiftPoint(p, now) {
+    p.tx = p.originX - 50 + Math.random() * 100;
+    p.ty = p.originY - 50 + Math.random() * 100;
+    p.sx = p.x; p.sy = p.y;
+    p.dur = (1 + Math.random()) * 1000;
+    p.t0 = now;
+  }
+
+  function initPoints() {
+    width  = canvas.width  = canvas.offsetWidth;
+    height = canvas.height = canvas.offsetHeight;
+    points = [];
+
+    for (var x = 0; x < width; x += width / 20) {
+      for (var y = 0; y < height; y += height / 20) {
+        var px = x + Math.random() * (width / 20);
+        var py = y + Math.random() * (height / 20);
+        points.push({ x: px, originX: px, y: py, originY: py,
+                      radius: 2 + Math.random() * 2 });
+      }
+    }
+
+    // Find 5 closest neighbours for each point
+    for (var i = 0; i < points.length; i++) {
+      var p1 = points[i], closest = [];
+      for (var j = 0; j < points.length; j++) {
+        var p2 = points[j];
+        if (p1 === p2) continue;
+        if (closest.length < 5) { closest.push(p2); continue; }
+        var d = sqDist(p1, p2), maxD = 0, maxK = 0;
+        for (var k = 0; k < 5; k++) {
+          var dk = sqDist(p1, closest[k]);
+          if (dk > maxD) { maxD = dk; maxK = k; }
+        }
+        if (d < maxD) closest[maxK] = p2;
+      }
+      p1.closest = closest;
+      shiftPoint(p1, performance.now());
+    }
+  }
+
+  function draw(now) {
+    if (animActive) {
+      ctx.clearRect(0, 0, width, height);
+
+      // Update positions
+      for (var i = 0; i < points.length; i++) {
+        var p = points[i];
+        var prog = Math.min((now - p.t0) / p.dur, 1);
+        var e = easeInOut(prog);
+        p.x = p.sx + (p.tx - p.sx) * e;
+        p.y = p.sy + (p.ty - p.sy) * e;
+        if (prog >= 1) shiftPoint(p, now);
+      }
+
+      // Draw all lines in one batch
+      ctx.beginPath();
+      ctx.strokeStyle = 'rgba(16, 25, 130, 0.05)';
+      ctx.lineWidth = 1;
+      for (var i = 0; i < points.length; i++) {
+        var p = points[i];
+        for (var j = 0; j < p.closest.length; j++) {
+          ctx.moveTo(p.x, p.y);
+          ctx.lineTo(p.closest[j].x, p.closest[j].y);
+        }
+      }
+      ctx.stroke();
+
+      // Draw all dots in one batch
+      ctx.beginPath();
+      ctx.fillStyle = 'rgba(16, 25, 130, 0.3)';
+      for (var i = 0; i < points.length; i++) {
+        var p = points[i];
+        ctx.moveTo(p.x + p.radius, p.y);
+        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+      }
+      ctx.fill();
+    }
+    requestAnimationFrame(draw);
+  }
+
+  window.addEventListener('scroll', function () {
+    animActive = window.scrollY <= height;
+  }, { passive: true });
+  window.addEventListener('resize', initPoints);
+
+  initPoints();
+  requestAnimationFrame(draw);
+}());
