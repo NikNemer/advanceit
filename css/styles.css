@@ -948,6 +948,9 @@ p#main-h2 {
     background-position: right -210px center;
     background-size: auto 90%;
   }
+  .hero-content {
+  padding-left: 1em;
+}
 
   .contact-cols {
     flex-direction: column;
