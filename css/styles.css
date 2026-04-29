@@ -6,6 +6,7 @@
 
   --blue-dark:     #111c7d;
   --blue-nav:      rgb(15, 99, 174);
+  --blue-navbut:   #0061c5;
   --cyan:          #1ccdda;
   --myblue:        #62a3ff;
   --myblue2:       #34a6ff;
@@ -364,9 +365,7 @@ p#main-h2 {
 .serv {
   position: relative;
   padding: 2em;
-  border-radius: 20px;
   text-align: left;
-  background-color: #fff;
   transition: transform 500ms ease-out;
 }
 
@@ -379,22 +378,23 @@ p#main-h2 {
 }
 
 .serv .serv-icon i {
-  color: var(--accent-color);
+  color: var(--mygray);
   font-size: 32px;
-  margin-bottom: 30px;
-  background: color-mix(in srgb, var(--accent-color), transparent 95%);
+  /* margin-bottom: 30px;
+  background: color-mix(in srgb, var(--contrast-color), transparent 80%); 
   border-radius: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.3s; 
   width: 72px;
   height: 72px;
-  transition: 0.3s;
+  */
 }
 
 .serv:hover .serv-icon i {
-  color: var(--contrast-color);
-  background: var(--accent-color);
+  color: var(--blue-navbut);
+  background: var(--contrast-color);
 }
 
 .serv:hover .serv-title {
@@ -402,14 +402,15 @@ p#main-h2 {
 }
 
 .serv-title {
-  font-size: 1.3em;
-  font-weight: 400;
-  line-height: 1.5;
-  padding-bottom: 1em;
-  text-align: center;
-  font-family: 'Bitcount Single', monospace;
-  color: #777;
-  margin: 0;
+    font-size: 1.3em;
+    font-weight: 400;
+    line-height: 1;
+    padding-bottom: 1em;
+    text-align: left;
+    font-family: 'Bitcount Single', monospace;
+    color: #000000;
+    margin: 0;
+    text-transform: uppercase;
 }
 
 .serv-text {
@@ -438,6 +439,11 @@ p#main-h2 {
 .serv:hover {
   transform: translateY(-10px);
   cursor: pointer;
+}
+
+.ous {
+  display: block;
+  text-align: center;
 }
 
 /* ── Section 5 — Tools & Technologies (orbit) ───────────── */
@@ -885,15 +891,18 @@ p#main-h2 {
 /* ── Responsive ──────────────────────────────────────────── */
 
 @media (max-width: 1315px) {
-  .page-wrapper { background-position: 0%; }
+
 }
 
 @media (max-width: 1050px) {
-  .page-wrapper { background-position: 20%; }
+
 }
 
 @media (max-width: 915px) {
-  .page-wrapper { background-position: 30%; }
+
+  .page-background .content-wrapper {
+    background-size: auto 80%;
+  }
 }
 @media (max-width: 750px) {
   #mmenulogo { display: inline-flex; margin-left: auto; }
@@ -923,7 +932,7 @@ p#main-h2 {
 @media (max-width: 660px) {
   .page-background .content-wrapper {
     background-position: right 0px center;
-    background-size: auto 90%;
+    background-size: auto 70%;
   }
 }
 
@@ -946,8 +955,8 @@ p#main-h2 {
   .page-wrapper { background-position: 100%; }
 
   .page-background .content-wrapper {
-    background-position: right -215px center;
-    background-size: auto 90%;
+    background-position: right -175px center;
+    background-size: auto 75%;
   }
   .hero-content {
   padding-left: 1em;

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — design preview</title>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Single&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; font-family: 'Figtree', sans-serif; }
+
+.section-services {
+  background-color: #f0f0f0;
+  padding: 0 1.5em 4em;
+  color: #111;
+}
+
+.title-block {
+  text-align: center;
+}
+.title-block h2 {
+  padding: 1.5em;
+  font-family: 'Bitcount Single', monospace;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.7em;
+  letter-spacing: 2.5px;
+  line-height: 1;
+  margin: 0;
+  color: #606060;
+}
+
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+.cursor { animation: blink 1.6s step-start infinite; }
+
+.serv-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-list {
+  display: flex;
+  gap: 1.25rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.serv {
+  flex: 1;
+  background: rgba(17, 28, 125, 0.07);
+  border: 1px solid rgba(17, 28, 125, 0.1);
+  border-radius: 16px;
+  padding: 2em 1.25em 1.75em;
+  text-align: center;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.serv:hover {
+  background: rgba(17, 28, 125, 0.13);
+  border-color: rgba(17, 28, 125, 0.25);
+}
+
+.serv-num {
+  display: block;
+  font-family: 'Bitcount Single', monospace;
+  font-size: 2.2em;
+  color: #111c7d;
+  line-height: 1;
+  margin-bottom: .3em;
+  opacity: .25;
+}
+
+.serv i {
+  font-size: 1.6em;
+  color: #111c7d;
+  display: block;
+  margin-bottom: .6em;
+  opacity: .75;
+}
+
+.serv h3 {
+  font-family: 'Bitcount Single', monospace;
+  font-size: 1.05em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #111c7d;
+  margin: 0 0 .6em;
+}
+
+.serv p {
+  font-size: .88em;
+  color: rgba(0,0,0,.5);
+  line-height: 1.55;
+  margin: 0;
+}
+
+@media (max-width: 860px) {
+  .services-list { flex-wrap: wrap; }
+  .serv { flex: 1 1 calc(50% - 1.25rem); }
+}
+@media (max-width: 480px) {
+  .serv { flex: 1 1 100%; }
+}
+</style>
+</head>
+<body>
+
+<section class="section-services">
+  <div class="title-block">
+    <h2>Our Services<span class="cursor">.</span></h2>
+  </div>
+
+  <div class="serv-inner">
+    <ul class="services-list">
+
+      <li class="serv">
+        <span class="serv-num">01</span>
+        <i class="bi bi-code-slash"></i>
+        <h3>Software Security</h3>
+        <p>Enhancing the security posture of software applications through advanced vulnerability detection and remediation techniques</p>
+      </li>
+
+      <li class="serv">
+        <span class="serv-num">02</span>
+        <i class="bi bi-hdd-network"></i>
+        <h3>Network Security</h3>
+        <p>Implementing robust measures to protect network infrastructure from cyber threats and unauthorized access</p>
+      </li>
+
+      <li class="serv">
+        <span class="serv-num">03</span>
+        <i class="bi bi-shield-lock"></i>
+        <h3>Asset Security</h3>
+        <p>Safeguarding organizational assets through comprehensive data classification, handling, and protection protocols</p>
+      </li>
+
+      <li class="serv">
+        <span class="serv-num">04</span>
+        <i class="bi bi-person-bounding-box"></i>
+        <h3>Access Management</h3>
+        <p>Ensuring controlled and secure access to critical systems and data via stringent identity verification processes</p>
+      </li>
+
+      <li class="serv">
+        <span class="serv-num">05</span>
+        <i class="bi bi-clipboard-check"></i>
+        <h3>Risk Management</h3>
+        <p>Conducting thorough risk assessments to identify, analyze, and mitigate potential security risks to the organization</p>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+</body>
+</html>
