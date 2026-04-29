@@ -224,7 +224,7 @@ h1#main-h1 {
 p#main-h2 {
   font-family: 'Bitcount Single', sans-serif;
   font-size: clamp(1.2rem, 3vw, 1.3em);
-  color: var(--myblue);
+  color: #ffffff9c;
   line-height: 1;
   margin: 0;
 }
@@ -268,7 +268,7 @@ p#main-h2 {
 /* ── Section titles ──────────────────────────────────────── */
 
 .title-block h2 {
-  padding: 1.5em 1.5em 1.5em 2.2em;
+  padding: 1.5em .5em 1.5em 1.2em;
   font-family: 'Bitcount Single', monospace;
   font-weight: 400;
   text-transform: uppercase;
@@ -919,9 +919,7 @@ p#main-h2 {
     margin: 0;
     padding: 12px 0;
   }
-  p#main-h2 {
-    color: var(--cyan);
-  }
+
 }
 @media (max-width: 660px) {
   .page-background .content-wrapper {
