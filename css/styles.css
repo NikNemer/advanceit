@@ -935,12 +935,16 @@ p#main-h2 {
     align-items: center;
   }
 
+  .about-flex .about-logo {
+    order: 2;
+  }
+
   .about-flex p {
+    order: 1;
     padding: 0;
   }
 
   .page-wrapper { background-position: 100%; }
-
 
   .page-background .content-wrapper {
     background-position: right -215px center;
@@ -948,8 +952,15 @@ p#main-h2 {
   }
   .hero-content {
   padding-left: 1em;
-}
+  }
 
+  .section0 {
+    padding: 1.5em 2.5em 1.5em;
+  }
+
+  .section0 .content-wrapper {
+  padding: .5em 0 .5em 0;
+  }
   .contact-cols {
     flex-direction: column;
     gap: 2em;
