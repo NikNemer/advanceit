@@ -166,10 +166,11 @@ header {
   background-position: 100%;
   background-size: auto 100%;
   background: linear-gradient(135deg, #0b1260 0%, #0061c5 50%, #0b1260 100%);
+
 }
 
 .page-wrapper .page-background {
-  padding: 8em 1.5em 2em;
+  padding: 0em 1.5em 0em;
 }
 
 .page-background .content-wrapper {
@@ -177,7 +178,11 @@ header {
   align-items: center;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: .5em 0;
+  padding: 8.5em 0 2.5em;
+      background-image: url(/static/img/mainbg.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
 }
 
 .hero-content {
@@ -778,7 +783,7 @@ p#main-h2 {
 
 .contact-cols {
   display: flex;
-  gap: 5em;
+  gap: 4em;
   align-items: flex-start;
   margin-top: 0em;
 }
