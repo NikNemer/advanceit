@@ -228,7 +228,6 @@ window.addEventListener('scroll', () => {
   }, { passive: true });
 }());
 
-// ── Hero canvas particle network (tympanus demo-1 style) ──
 (function () {
   var canvas = document.getElementById('hero-canvas');
   if (!canvas) return;
@@ -262,8 +261,8 @@ window.addEventListener('scroll', () => {
     height = canvas.height = canvas.offsetHeight;
     points = [];
 
-    for (var x = 0; x < width; x += width / 20) {
-      for (var y = 0; y < height; y += height / 20) {
+    for (var x = 0; x < width; x += width / 16) {
+      for (var y = 0; y < height; y += height / 16) {
         var px = x + Math.random() * (width / 20);
         var py = y + Math.random() * (height / 20);
         points.push({ x: px, originX: px, y: py, originY: py,
@@ -319,7 +318,7 @@ window.addEventListener('scroll', () => {
 
       // Draw all dots in one batch
       ctx.beginPath();
-      ctx.fillStyle = 'rgba(16, 25, 130, 0.3)';
+      ctx.fillStyle = 'rgba(16, 25, 130, 0.2)';
       for (var i = 0; i < points.length; i++) {
         var p = points[i];
         ctx.moveTo(p.x + p.radius, p.y);
