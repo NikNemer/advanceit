@@ -101,12 +101,11 @@ header {
 #mmenulogo {
   display: none;
   align-items: center;
-  color: var(--cyan);
-  background-color: #2b3694;
+  color: var(--myblue);
+  background-color: var(--blue-dark);
   border: none;
   padding: .25em .5em;
   border-radius: .25em;
-  margin-left: 20px;
   cursor: pointer;
   font-size: 1.2rem;
 }
@@ -897,7 +896,7 @@ p#main-h2 {
   .page-wrapper { background-position: 30%; }
 }
 @media (max-width: 750px) {
-  #mmenulogo { display: inline-flex; }
+  #mmenulogo { display: inline-flex; margin-left: auto; }
 
   #mmenu {
     display: none;
