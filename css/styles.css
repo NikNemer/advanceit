@@ -621,9 +621,7 @@ color: var(--mygray);
 
 @media (max-width: 560px) {
   .orbit-scene {
-    transform: scale(0.58);
     transform-origin: top center;
-    margin-bottom: -195px;
   }
 }
 
@@ -742,14 +740,14 @@ color: var(--mygray);
   overflow: hidden;
   cursor: grab;
   background: linear-gradient(to top, #eee 0%, #ffffff 50%);
-  display: flex;
-  justify-content: center;
 }
 .globe-container:active { cursor: grabbing; }
 
 #globe-svg {
   display: block;
-  margin: 0 auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   width: 600px;
   height: 520px;
 }
