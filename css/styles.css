@@ -102,8 +102,8 @@ header {
 #mmenulogo {
   display: none;
   align-items: center;
-  color: var(--myblue);
-  background-color: var(--blue-dark);
+  color: #003b8f;
+  background-color: #006fdf;
   border: none;
   padding: .25em .5em;
   border-radius: .25em;
@@ -123,8 +123,8 @@ header {
   font-size: .93em;
   font-weight: 400;
   position: relative;
-  margin: 0 20px;
-  text-transform: uppercase;
+  margin: 0 18px;
+
 }
 
 #mmenu li a,
@@ -952,8 +952,9 @@ color: var(--mygray);
     left: 0;
     right: 0;
     flex-direction: column;
-    background-color: #366dc7;
-    padding: .5em 1.5em 1em;
+    background-color: #0061c5;
+    padding: 0em 1.5em 0em;
+    margin: 0 1.5em;
     
   }
 
@@ -964,6 +965,11 @@ color: var(--mygray);
   #mmenu li {
     margin: 0;
     padding: 12px 0;
+  }
+  #mmenu.open li {
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: #006fdf 1px solid;
   }
 
 }
