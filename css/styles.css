@@ -61,11 +61,10 @@ main {
   padding-bottom: 0em;
 }
 
-footer {
-  background-color: var(--blue-dark);
+#footer {
   text-align: center;
-  color: #fff;
-  padding: 0.5em;
+  padding: 0 1.5em 0;
+  font-size: 0.75rem;
 }
 
 /* ── Header / nav ────────────────────────────────────────── */
@@ -812,7 +811,7 @@ color: var(--mygray);
 /* ── Section — Contacts & Form ───────────────────────────── */
 
 .section-contact {
-  background: linear-gradient(135deg, #bbb 0%, #f0f0f0 50%, #bbb 100%);
+  background: linear-gradient(135deg, #ccc 0%, #f0f0f0 50%, #ccc 100%);
   color: var(--mygray);
 }
 
@@ -858,12 +857,12 @@ color: var(--mygray);
   align-items: flex-start;
   gap: .75em;
   margin-bottom: 1.25em;
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
 .contact-detail i {
-  font-size: 1.15em;
+  font-size: 1.15rem;
   color: var(--mymiddlegray);
   margin-top: .18em;
   flex-shrink: 0;
@@ -876,6 +875,7 @@ color: var(--mygray);
 
 .contact-form-wrap {
   flex: 1;
+  padding-bottom: 3em;
 }
 
 .contact-form-wrap form {
