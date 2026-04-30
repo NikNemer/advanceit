@@ -177,39 +177,16 @@ header {
   z-index: 0;
 }
 
-.ripple-bg span {
+#orb-canvas {
   position: absolute;
-  top: 50%;
-  left: calc(50% - min(276px, 50vw - 5em));
-  width: 80px;
-  height: 80px;
-  margin-top: -40px;
-  margin-left: -40px;
-  border-radius: 50%;
-  border: 1px solid rgba(52, 166, 255, 0.15);
-  opacity: 0;
-  animation: ripple-out 9s linear infinite;
-}
-
-.ripple-bg span:nth-child(1) { animation-delay: 0s; }
-.ripple-bg span:nth-child(2) { animation-delay: 1.5s; }
-.ripple-bg span:nth-child(3) { animation-delay: 3s; }
-.ripple-bg span:nth-child(4) { animation-delay: 4.5s; }
-.ripple-bg span:nth-child(5) { animation-delay: 6s; }
-.ripple-bg span:nth-child(6) { animation-delay: 7.5s; }
-
-@keyframes ripple-out {
-  0%   { transform: scale(1);  opacity: 0.25; }
-  80%  { opacity: 0.06; }
-  100% { transform: scale(25); opacity: 0; }
-}
-
-
-#hero-canvas {
-  position: absolute;
-  inset: 0;
-  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: var(--max-width);
+  margin: 0 auto;
   height: 100%;
+  pointer-events: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -227,11 +204,10 @@ header {
   align-items: center;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 8.5em 1.5em 2.5em;
-    background-image: url(/static/img/mainbg2.png);
-    background-size: auto 100%;
+  padding: 7.5em 1.5em 2.5em;
+    background-image: url(/static/img/comptiap.png);
     background-repeat: no-repeat;
-    background-position: right 1.5em center;
+    background-position: right 20% top 150px;
     
 }
 
@@ -399,6 +375,7 @@ color: var(--mygray);
   line-height: 1.5;
   margin: 0 0 .5em;
   color: var(--mymiddlegray);
+  padding: 0 1.5em;
 }
 
 /* ── Section 2 — Services ────────────────────────────────── */
@@ -962,7 +939,7 @@ color: var(--mygray);
 @media (max-width: 915px) {
 
   .page-background .content-wrapper {
-    background-size: auto 80%;
+
   }
 }
 @media (max-width: 750px) {
@@ -993,7 +970,7 @@ color: var(--mygray);
 @media (max-width: 660px) {
   .page-background .content-wrapper {
     background-position: right 0px center;
-    background-size: auto 70%;
+
   }
 }
 
@@ -1017,7 +994,6 @@ color: var(--mygray);
 
   .page-background .content-wrapper {
     background-position: right -175px center;
-    background-size: auto 75%;
   }
   .hero-content {
   padding-left: 1em;

@@ -228,112 +228,162 @@ window.addEventListener('scroll', () => {
   }, { passive: true });
 }());
 
+// ── Hero spinning orb ─────────────────────────────────────
 (function () {
-  var canvas = document.getElementById('hero-canvas');
-  if (!canvas) return;
+  var canvas = document.getElementById('orb-canvas');
+  if (!canvas || !canvas.getContext) return;
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
   var ctx = canvas.getContext('2d');
-  var width, height, points, animActive = true;
+  var sphereRad = 800;
+  var radius_sp = 1;
+  var displayWidth, displayHeight;
+  var wait = 1, count = 0, numToAddEachFrame = 8;
+  var particleList = {}, recycleBin = {};
+  var particleAlpha, rgbString;
+  var fLen, projCenterX, projCenterY, zMax;
+  var turnAngle, turnSpeed;
+  var sphereCenterY, sphereCenterZ;
+  var particleRad, zeroAlphaDepth;
+  var randAccelX, randAccelY, randAccelZ;
+  var p, outsideTest, nextParticle, sinAngle, cosAngle;
+  var rotX, rotZ, depthAlphaFactor, m, i;
+  var theta, phi, x0, y0, z0;
 
-  // Circular ease-in-out (matches Circ.easeInOut from TweenLite)
-  function easeInOut(t) {
-    t *= 2;
-    if (t < 1) return -0.5 * (Math.sqrt(1 - t * t) - 1);
-    t -= 2;
-    return 0.5 * (Math.sqrt(1 - t * t) + 1);
+  function resize() {
+    displayWidth  = canvas.width  = canvas.offsetWidth;
+    displayHeight = canvas.height = canvas.offsetHeight;
+    projCenterX = displayWidth  * 0.5;
+    projCenterY = displayHeight * 1.0;
   }
 
-  function sqDist(a, b) {
-    return (a.x - b.x) * (a.x - b.x) + (a.y - b.y) * (a.y - b.y);
+  function init() {
+    resize();
+    rgbString = 'rgba(70,255,140,';
+    particleAlpha = 1;
+    fLen = 400;
+    zMax = fLen - 2;
+    particleList = {}; recycleBin = {};
+    randAccelX = 0.1; randAccelY = 0.1; randAccelZ = 0.1;
+    particleRad = 2.5;
+    sphereCenterY = 0;
+    sphereCenterZ = -3 - sphereRad;
+    zeroAlphaDepth = -750;
+    turnSpeed = 2 * Math.PI / 1200;
+    turnAngle = 0;
   }
 
-  function shiftPoint(p, now) {
-    p.tx = p.originX - 50 + Math.random() * 100;
-    p.ty = p.originY - 50 + Math.random() * 100;
-    p.sx = p.x; p.sy = p.y;
-    p.dur = (1 + Math.random()) * 1000;
-    p.t0 = now;
+  function addParticle(x0, y0, z0, vx0, vy0, vz0) {
+    var np;
+    if (recycleBin.first != null) {
+      np = recycleBin.first;
+      if (np.next != null) { recycleBin.first = np.next; np.next.prev = null; }
+      else { recycleBin.first = null; }
+    } else {
+      np = {};
+    }
+    if (particleList.first == null) {
+      particleList.first = np; np.prev = null; np.next = null;
+    } else {
+      np.next = particleList.first; particleList.first.prev = np;
+      particleList.first = np; np.prev = null;
+    }
+    np.x = x0; np.y = y0; np.z = z0;
+    np.velX = vx0; np.velY = vy0; np.velZ = vz0;
+    np.age = 0; np.dead = false;
+    return np;
   }
 
-  function initPoints() {
-    width  = canvas.width  = canvas.offsetWidth;
-    height = canvas.height = canvas.offsetHeight;
-    points = [];
+  function recycle(p) {
+    if (particleList.first == p) {
+      if (p.next != null) { p.next.prev = null; particleList.first = p.next; }
+      else { particleList.first = null; }
+    } else {
+      if (p.next == null) { p.prev.next = null; }
+      else { p.prev.next = p.next; p.next.prev = p.prev; }
+    }
+    if (recycleBin.first == null) {
+      recycleBin.first = p; p.prev = null; p.next = null;
+    } else {
+      p.next = recycleBin.first; recycleBin.first.prev = p;
+      recycleBin.first = p; p.prev = null;
+    }
+  }
 
-    for (var x = 0; x < width; x += width / 16) {
-      for (var y = 0; y < height; y += height / 16) {
-        var px = x + Math.random() * (width / 20);
-        var py = y + Math.random() * (height / 20);
-        points.push({ x: px, originX: px, y: py, originY: py,
-                      radius: 2 + Math.random() * 2 });
+  function onFrame() {
+    count++;
+    if (count >= wait) {
+      count = 0;
+      for (i = 0; i < numToAddEachFrame; i++) {
+        theta = Math.random() * 2 * Math.PI;
+        phi   = Math.acos(Math.random() * 2 - 1);
+        x0 = sphereRad * Math.sin(phi) * Math.cos(theta);
+        y0 = sphereRad * Math.sin(phi) * Math.sin(theta);
+        z0 = sphereRad * Math.cos(phi);
+        var np = addParticle(x0, sphereCenterY + y0, sphereCenterZ + z0,
+                             0.002 * x0, 0.002 * y0, 0.002 * z0);
+        np.attack = 50; np.hold = 50; np.decay = 100;
+        np.initValue = 0; np.holdValue = particleAlpha; np.lastValue = 0;
+        np.stuckTime = 90 + Math.random() * 20;
+        np.accelX = 0; np.accelY = 0; np.accelZ = 0;
       }
     }
 
-    // Find 5 closest neighbours for each point
-    for (var i = 0; i < points.length; i++) {
-      var p1 = points[i], closest = [];
-      for (var j = 0; j < points.length; j++) {
-        var p2 = points[j];
-        if (p1 === p2) continue;
-        if (closest.length < 5) { closest.push(p2); continue; }
-        var d = sqDist(p1, p2), maxD = 0, maxK = 0;
-        for (var k = 0; k < 5; k++) {
-          var dk = sqDist(p1, closest[k]);
-          if (dk > maxD) { maxD = dk; maxK = k; }
-        }
-        if (d < maxD) closest[maxK] = p2;
+    turnAngle = (turnAngle + turnSpeed) % (2 * Math.PI);
+    sinAngle = Math.sin(turnAngle);
+    cosAngle = Math.cos(turnAngle);
+
+    ctx.clearRect(0, 0, displayWidth, displayHeight);
+
+    p = particleList.first;
+    while (p != null) {
+      nextParticle = p.next;
+      p.age++;
+
+      if (p.age > p.stuckTime) {
+        p.velX += p.accelX + randAccelX * (Math.random() * 2 - 1);
+        p.velY += p.accelY + randAccelY * (Math.random() * 2 - 1);
+        p.velZ += p.accelZ + randAccelZ * (Math.random() * 2 - 1);
+        p.x += p.velX; p.y += p.velY; p.z += p.velZ;
       }
-      p1.closest = closest;
-      shiftPoint(p1, performance.now());
+
+      rotX = cosAngle * p.x + sinAngle * (p.z - sphereCenterZ);
+      rotZ = -sinAngle * p.x + cosAngle * (p.z - sphereCenterZ) + sphereCenterZ;
+      m = radius_sp * fLen / (fLen - rotZ);
+      p.projX = rotX * m + projCenterX;
+      p.projY = p.y  * m + projCenterY;
+
+      if (p.age < p.attack + p.hold + p.decay) {
+        if      (p.age < p.attack)              p.alpha = (p.holdValue - p.initValue) / p.attack * p.age + p.initValue;
+        else if (p.age < p.attack + p.hold)     p.alpha = p.holdValue;
+        else                                    p.alpha = (p.lastValue - p.holdValue) / p.decay * (p.age - p.attack - p.hold) + p.holdValue;
+      } else {
+        p.dead = true;
+      }
+
+      outsideTest = (p.projX > displayWidth || p.projX < 0 ||
+                     p.projY < 0 || p.projY > displayHeight || rotZ > zMax);
+
+      if (outsideTest || p.dead) {
+        recycle(p);
+      } else {
+        depthAlphaFactor = 1 - rotZ / zeroAlphaDepth;
+        depthAlphaFactor = depthAlphaFactor > 1 ? 1 : (depthAlphaFactor < 0 ? 0 : depthAlphaFactor);
+        ctx.fillStyle = rgbString + depthAlphaFactor * p.alpha + ')';
+        ctx.beginPath();
+        ctx.arc(p.projX, p.projY, m * particleRad, 0, 2 * Math.PI, false);
+        ctx.closePath();
+        ctx.fill();
+      }
+
+      p = nextParticle;
     }
+
+    requestAnimationFrame(onFrame);
   }
 
-  function draw(now) {
-    if (animActive) {
-      ctx.clearRect(0, 0, width, height);
+  window.addEventListener('resize', resize);
 
-      // Update positions
-      for (var i = 0; i < points.length; i++) {
-        var p = points[i];
-        var prog = Math.min((now - p.t0) / p.dur, 1);
-        var e = easeInOut(prog);
-        p.x = p.sx + (p.tx - p.sx) * e;
-        p.y = p.sy + (p.ty - p.sy) * e;
-        if (prog >= 1) shiftPoint(p, now);
-      }
-
-      // Draw all lines in one batch
-      ctx.beginPath();
-      ctx.strokeStyle = 'rgba(16, 25, 130, 0.05)';
-      ctx.lineWidth = 1;
-      for (var i = 0; i < points.length; i++) {
-        var p = points[i];
-        for (var j = 0; j < p.closest.length; j++) {
-          ctx.moveTo(p.x, p.y);
-          ctx.lineTo(p.closest[j].x, p.closest[j].y);
-        }
-      }
-      ctx.stroke();
-
-      // Draw all dots in one batch
-      ctx.beginPath();
-      ctx.fillStyle = 'rgba(16, 25, 130, 0.2)';
-      for (var i = 0; i < points.length; i++) {
-        var p = points[i];
-        ctx.moveTo(p.x + p.radius, p.y);
-        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-      }
-      ctx.fill();
-    }
-    requestAnimationFrame(draw);
-  }
-
-  window.addEventListener('scroll', function () {
-    animActive = window.scrollY <= height;
-  }, { passive: true });
-  window.addEventListener('resize', initPoints);
-
-  initPoints();
-  requestAnimationFrame(draw);
+  init();
+  requestAnimationFrame(onFrame);
 }());
