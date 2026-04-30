@@ -800,7 +800,7 @@ color: var(--mygray);
 
 @media (max-width: 920px) {
   .stat-sep { display: none; }
-  .stat { flex: 1 1 33%; padding: .75em 1em; }
+  .stat { flex: 1 1 33%; padding: .75em .5em; }
 }
 
 @media (max-width: 480px) {
