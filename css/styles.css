@@ -393,10 +393,10 @@ color: var(--mygray);
 .services-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 365px));
-  gap: 1.5rem;
+  gap: 1rem 1.5rem;
   justify-content: center;
   list-style: none;
-  padding: 0 0 2.5em;
+  padding: 2em 0 2.5em;
   margin: 0;
 }
 
@@ -405,14 +405,17 @@ color: var(--mygray);
   padding: 2em;
   text-align: left;
   transition: transform 500ms ease-out;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 0.6em;
+  border-radius: 16px;
+  border: #f0f0f0 1px solid;
 }
 
 .serv .serv-icon {
-  text-align: center;
-  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .serv .serv-icon i {
@@ -432,23 +435,24 @@ color: var(--mygray);
 
 .serv:hover .serv-icon i {
   color: var(--blue-navbut);
-  background: var(--contrast-color);
+
 }
 
 .serv:hover .serv-title {
-  color: var(--accent-color);
+  color: var(--blue-navbut);
 }
 
 .serv-title {
     font-size: 1.3em;
     font-weight: 400;
     line-height: 1;
-    padding-bottom: 1em;
+    padding: 0 0 0 0.25em;
     text-align: left;
     font-family: 'Bitcount Single', monospace;
     color: #000000;
     margin: 0;
     text-transform: uppercase;
+    word-spacing: 100px;
 }
 
 .serv-text {
@@ -456,15 +460,17 @@ color: var(--mygray);
   line-height: 1.5;
   color: #333;
   margin: 0;
+  grid-column: 1 / -1;
+  padding: 1em 0 1em;
 }
 
 .serv::before {
   position: absolute;
   content: "";
   inset: auto 0 0 0;
-  border-bottom: 20px solid #eaeaea;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-bottom: 16px solid #eee;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
   transform: scaleX(0);
   transition: transform 400ms ease-out;
   will-change: transform;
@@ -477,6 +483,8 @@ color: var(--mygray);
 .serv:hover {
   transform: translateY(-10px);
   cursor: pointer;
+  background: rgba(255,255,255,.2);
+  border-color: #e5e5e5;
 }
 
 .ous {
